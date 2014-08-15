@@ -1,19 +1,29 @@
-%W( 
-	sinatra/base 
-	sinatra/config_file 
-	mustache/sinatra
-).each {|e| require e}
+require 'sinatra/base'
+require 'mustache/sinatra'
 
-get '/' do
-	@title = "Mustache + Sinatra = Wonder"
-	mustache :index
-end
+class App < Sinatra::Base
+  register Mustache::Sinatra
+  require './views/layout.rb'
+  require './views/index.rb'
+  require './views/other.rb'
+  
 
-get '/other' do
-	mustache :other
-end
+  set :mustache, {
+    :views     => 'views',
+    :templates => 'templates'
+  }
 
-get '/nolayout' do
-	content_type 'text/plain'
-	mustache :nolayout, :layout => false
+  get '/' do
+    @title = "Mustache + Sinatra = Wonder"
+    mustache :index
+  end
+
+  get '/other' do
+    mustache :other
+  end
+
+  get '/nolayout' do
+    content_type 'text/plain'
+    mustache :nolayout, :layout => false
+  end
 end

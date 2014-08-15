@@ -1,5 +1,5 @@
-source 'https://rubygems.org'
-gem 'rack'
+source :rubygems
+
 gem "mustache"
 gem "sinatra"
 gem "shotgun"
