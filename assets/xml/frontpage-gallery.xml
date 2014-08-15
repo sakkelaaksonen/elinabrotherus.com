@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <galleries>
+ 	<gallery id="front">
+ 	<folder>front</folder>
+		<pic>
+			<lores>03_I-hate-sex</lores>
+			<title>I hate sex.</title>
+			<dimensions>80x110cm</dimensions>
+			<year>1998</year>
+			<edition>5</edition>
+		</pic>
+		<pic>
+			<lores>04_Le-nez-de-Monsieur-Cheval</lores>
+			<title>Le nez de Monsieur Cheval</title>
+			<dimensions>80x102cm</dimensions>
+			<year>1999</year>
+			<edition>6</edition>
+		</pic>
+		<pic>
+			<lores>39_Le-Printemps</lores>
+			<title>Le Printemps</title>
+			<dimensions>70x80cm</dimensions>
+			<year>2001</year>
+			<edition>6</edition>
+		</pic>
+		<pic>
+			<lores>60_Der-Wanderer-2</lores>
+			<title>Der Wanderer 2</title>
+			<dimensions>80x97cm</dimensions>
+			<year>2004</year>
+			<edition>6</edition>
+		</pic>
+		<pic>
+			<lores>55_Baigneuse,-orage-montant</lores>
+			<title>Baigneuse, orage montant</title>
+			<dimensions>70x79cm</dimensions>
+			<year>2003</year>
+			<edition>6</edition>
+		</pic>
+		<pic>
+			<lores>15_Green-Lake</lores>
+			<title>Green Lake</title>
+			<dimensions>80x97cm / 105x128cm</dimensions>
+			<year>2007</year>
+			<edition>6</edition>
+		</pic>
+		
+	</gallery>	
+ </galleries>

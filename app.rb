@@ -14,30 +14,56 @@ class App < Sinatra::Base
   }
 
   # home
+  #need to do multiroutes here?
   get '/' do
-    @title = "Mustache + Sinatra = Wonder"
-    mustache :index
+    #redirect to news?
   end
 
   #news
-  get '/other' do
-    mustache :other
+  get '/news' do
+    mustache :news
+  end
+ 
+ #photography
+  get '/photography' do
+    mustache :photography
+  end
+ 
+  #Editions
+  get '/editions' do
+    mustache :editions
   end
 
-  #photography
-
-  #Editions
 
   #Videos
-
+  get '/videos' do
+    mustache :videos
+  end
+  
   #Exhibitions
+  get '/exhibitions' do
+    mustache :exhibitions
+  end
 
   #Bibliography
-
+  get '/bibiliography' do
+    mustache :bibiliography
+  end
+  
   #Links
+  get '/link' do
+    mustache :links
+  end
 
-  #Contract
+  #Contact
+  get '/contact' do
+    mustache :contact
+  end
 
+  get '/guestbook' do
+    mustache :guestbook
+  end
+  
   #Guestbook
 
   # get '/nolayout' do
