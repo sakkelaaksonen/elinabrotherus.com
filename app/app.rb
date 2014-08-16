@@ -72,14 +72,15 @@ class App < Sinatra::Base
     redirect to('/news')
   end
   
-  get %r{\/news\/?} do
+  get %r{\/news\/?$} do
+
     set_page('news')
     mustache :news
   end
  
  #photography
   
-  get %{\/photography\/:gallery\/?} do
+  get %{\/photography\/:gallery\/?$} do
     
   # @galleries - collection of all galleries
   # todo: memcache this whole output html with before & after filters?
@@ -92,56 +93,78 @@ class App < Sinatra::Base
     # mustache :photography
   end
   #photo main
-  get %r{\/photography\/?} do
+  get %r{\/photography\/?$} do
     
     set_page('photography')      
-    mustache :photography
+    mustache :photography_index
   end
 
 
   
   #Editions
-  get %r{\/editions\/?} do
+  get %r{\/editions\/?$} do
     set_page('editions')
     mustache :editions
   end
 
 
   #Videos
-  get %r{\/videos\/?} do
+  get %r{\/videos\/?$} do
     set_page('videos')
     mustache :videos
   end
   
   #Exhibitions
-  get %r{\/exhibitions\/?} do
+  get %r{\/exhibitions\/?$} do
     set_page('exhibitions')
     mustache :exhibitions
   end
 
   #Bibliography
-  get %r{\/bibliography\/?} do
+  get %r{\/bibliography\/?$} do
     set_page('bibliography')
     mustache :bibliography
   end
   
   #Links
-  get %r{\/links\/?} do
+  get %r{\/links\/?$} do
     set_page('links')
     mustache :links
   end
 
   #Contact
-  get %r{\/contact\/?} do
+  get %r{\/contact\/?$} do
     set_page('contact')
     mustache :contact
   end
 
   #Guestbook
-  get %r{\/guestbook\/?} do
+  
+  #static entries for ajax
+  get '/guestbook/entries.xml' do
+    content_type :xml
+    File.read('xml/guestbook.xml')
+  end  
+
+  post %r{\/guestbook\/save\/?$} do
+    @entry_name= params['entryName']
+    @entry_message= params['entryMessage']
+    params.to_s
+  end
+
+  post %r{\/guestbook\/delete\/?$} do
+   'no way dude' 
+    @entry_number= params['entry']
+    
+    params.to_s
+  end
+
+  get %r{\/guestbook\/?$} do
     set_page('guestbook')
     mustache :guestbook
   end
+
+
   
   #gallery from JSON
   

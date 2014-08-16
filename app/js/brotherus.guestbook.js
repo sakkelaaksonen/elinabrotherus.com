@@ -2,7 +2,7 @@
 Brotherus.Guestbook = function(mode) {
 //	this.cookieVals = { n:'brotherus_guestbook',v:'set', s:'/', d:1000 };
   this.edit = mode;
-	this.feedUrl = '/gb.php';
+	this.feedUrl = '/guestbook/entries.xml';
 	this.feed;
 	this.$container = $('#guestbookColumn');
 	var guestbook = this;
@@ -10,7 +10,7 @@ Brotherus.Guestbook = function(mode) {
 	//public
 	this.messageHtml = function(entryCount, entryName, entryMessage, pubDate) {
 		return	'<div id="entry_'+ entryCount + '" class="guestbook-entry">'
-				+(guestbook.edit == 2 ? '<a class="delete" href="/gb.php" id="delete_entry_'+entryCount+'">delete this entry</a>' : '' )
+				+(guestbook.edit == 2 ? '<a class="delete" href="/guestbook/delete/" id="delete_entry_'+entryCount+'">delete this entry</a>' : '' )
 				+'<h4 class="entryName">'+entryName+'</h4>'
 				+'<p class="entryMEssage">'+entryMessage+'</p>'
 				+'<p class="date">'+pubDate+'</p></div>';
@@ -115,7 +115,7 @@ Brotherus.Guestbook = function(mode) {
 	var addForm = function () {
 //		if( $.cookie(guestbook.cookieVals.n) != null) return false;
 		
-		var form = '<form method="post" action="/gb.php" class="gb clearfix"><h2>Guestbook</h2><p>Leave a message</p> \
+		var form = '<form method="post" action="/guestbook/save" class="gb clearfix"><h2>Guestbook</h2><p>Leave a message</p> \
 			<fieldset> \
 				<label for="entryName" class="gblabel">Name</label> \
 				<input class="gbfield" type="text" id="entryName" name="entryName" maxlength="40" tabindex="1"/> \
@@ -140,8 +140,8 @@ Brotherus.Guestbook = function(mode) {
 	//this = a.delete 
 		entryBtn = $(this);
 		$.post(
-			this.href,
-			{'do':'delete', entry:this.id.split('_').pop()},
+			'/guestbook/delete',
+			{entry:this.id.split('_').pop()},
 			function(data) {
   			if(data == 'entry saved') {
 				var $p = entryBtn.parent();

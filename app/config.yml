@@ -1,4 +1,5 @@
 #site structure
+gacode: UA-8971429-1
 menus:
  - title: News
    items: [{ id: news , url: /news , name: Current News  }]
@@ -49,7 +50,7 @@ pages:
   desc: Links to people and things I support
  contact:
   title: Send me a message
-  keywords: www.elinabrotherus.com
+  keywords: ''
   desc: the crew
  guestbook:
   title: Guestbook

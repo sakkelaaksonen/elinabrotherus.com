@@ -34,9 +34,9 @@
     Brotherus.running = {};
     Brotherus.effects = {};
     Brotherus.init = {};
-    {{SCRIPTS_STYLES}}
-    {{JS_BEFORE_ONLOAD}}
-    {{MOREDYNAMICS}}
+    {{script_css}}
+    {{script_before_load}}
+    {{more_script}}
 </script>
 
 </head>
@@ -80,7 +80,7 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 
 <script type="text/javascript">
 try {
-var pageTracker = _gat._getTracker("UA-8971429-1");
+var pageTracker = _gat._getTracker("{{gacode}}");
 pageTracker._trackPageview();
 } catch(err) {}
 

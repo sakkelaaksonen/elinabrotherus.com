@@ -25,6 +25,10 @@ class App
         App.settings.menus
   	  end
 
+      def gacode
+        App.settings.gacode
+      end
+
       #EOC
     end
   end
