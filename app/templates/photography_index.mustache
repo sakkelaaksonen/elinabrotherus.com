@@ -2,7 +2,12 @@
 	<div class="midTop">
 		<div class="midBottom">
 		<h2>Photography</h2>
-		{{gallerylist}}		
+    <ul>
+    {{#gallery_list}}
+    {{>gallery_list_item}}
+    {{/gallery_list}}   
+    </ul>
+		
 		</div>
 	</div>
 </div>

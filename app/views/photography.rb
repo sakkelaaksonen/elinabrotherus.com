@@ -1,11 +1,8 @@
 class App
   module Views
-    class Photography < Layout
+    class Photography < PhotoGallery
 
-      def gallerypics
-      
-      end
-     
+    
     end
   end
 end
