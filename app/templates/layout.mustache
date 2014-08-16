@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{title}} - Elina Brotherus</title>
+  <title>{{title}}Elina Brotherus</title>
   <meta http-equiv="Content-Type" content="text/html; utf-8" />
-  <meta name="keywords" content="{{KEYWORDS}}" />
-  <meta name="description" content="{{DESCRIPTION}}" />
+  <meta name="keywords" content="{{meta_keywords}}" />
+  <meta name="description" content="{{meta_desc}}" />
   <link rel="icon" type="image/gif" href="/favicon.gif" />
   <!-- functions and main function -->    
 
@@ -34,7 +34,7 @@
     Brotherus.running = {};
     Brotherus.effects = {};
     Brotherus.init = {};
-  {{SCRIPTS_STYLES}}
+    {{SCRIPTS_STYLES}}
     {{JS_BEFORE_ONLOAD}}
     {{MOREDYNAMICS}}
 </script>
@@ -43,7 +43,7 @@
 
 <body>
 {{foo}}
-<div id="pageContainer"  class="clearfix {{PAGECLASS}}">
+<div id="pageContainer"  class="clearfix {{pageclass}}">
   <div id="pageShadow">
   <!-- header box-->
     <div id="headerBox">
@@ -54,7 +54,7 @@
     <!-- content box -->
     <div id="contentBox" class="clearfix">
       <div id="naviColumn" class="column">
-      {{NAVI}}
+      {{>navi}}
       <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.elinabrotherus.com&amp;layout=box_count&amp;show_faces=false&amp;width=120&amp;action=like&amp;font=verdana&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:65px;" allowTransparency="true"></iframe>
       </div>
       {{{yield}}}

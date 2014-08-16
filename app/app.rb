@@ -1,23 +1,34 @@
 require 'sinatra/base'
+require "sinatra/config_file"
 require 'mustache/sinatra'
 require 'sinatra/assetpack'
-# require 'less'
+require 'json'
 
 class App < Sinatra::Base
+  
   register Mustache::Sinatra
   register Sinatra::AssetPack 
+  register Sinatra::ConfigFile
   
-  helpers do
-
-  end  
-
-  require './views/layout.rb'
-  require './views/index.rb'
-  require './views/other.rb'
-  require './views/news.rb'
-
   # must set app root for asset pack
-  set :root, File.dirname(__FILE__) 
+  set( :root, File.dirname(__FILE__) )
+  
+  #first layout
+  require './views/layout'
+  #then the rest in no particular order
+  Dir.glob("./views/*.rb") { |file| require file }
+  
+  
+
+  helpers( Sinatra::ConfigFile)
+  helpers do
+    def set_page (name)
+      @current_page = settings.pages[name]
+    end
+  end
+  
+  
+  config_file( "#{settings.root}/config.yml")
 
   set :mustache, {
     :views     => 'views',
@@ -25,7 +36,7 @@ class App < Sinatra::Base
   }
   
   assets {
-    
+
     serve '/js',     from: './js'        # Default
     serve '/css',    from: './css'       # Default
     serve '/images', from: './images'    # Default
@@ -44,60 +55,94 @@ class App < Sinatra::Base
     }
   # home
 
+
+  before do
+  
+
+  end
+
   
  #news
+
+  get '/menu' do
+    
+  end
+
   get '/' do 
     redirect to('/news')
   end
   
   get %r{\/news\/?} do
+    set_page('news')
     mustache :news
   end
  
  #photography
+  
+  get %{\/photography\/:gallery\/?} do
+    
+  # @galleries - collection of all galleries
+  # todo: memcache this whole output html with before & after filters?
+    set_page('photography')
+    @gallerytoken = params[:gallery] 
+    @galleries = JSON.parse(File.read('newfiles.json'))['galleries']
+    @gallery = @galleries.find { |g|  g['id'] == @gallerytoken}
+    @pics = @gallery['pics']
+    
+    # mustache :photography
+  end
+  #photo main
   get %r{\/photography\/?} do
+    
+    set_page('photography')      
     mustache :photography
   end
- 
+
+
+  
   #Editions
   get %r{\/editions\/?} do
+    set_page('editions')
     mustache :editions
   end
 
 
   #Videos
   get %r{\/videos\/?} do
+    set_page('videos')
     mustache :videos
   end
   
   #Exhibitions
   get %r{\/exhibitions\/?} do
+    set_page('exhibitions')
     mustache :exhibitions
   end
 
   #Bibliography
   get %r{\/bibliography\/?} do
-    mustache :bibiliography
+    set_page('bibliography')
+    mustache :bibliography
   end
   
   #Links
   get %r{\/links\/?} do
+    set_page('links')
     mustache :links
   end
 
   #Contact
   get %r{\/contact\/?} do
+    set_page('contact')
     mustache :contact
   end
 
   #Guestbook
   get %r{\/guestbook\/?} do
+    set_page('guestbook')
     mustache :guestbook
   end
   
+  #gallery from JSON
   
-  # get '/nolayout' do
-  #   content_type 'text/plain'
-  #   mustache :nolayout, :layout => false
-  # end
 end

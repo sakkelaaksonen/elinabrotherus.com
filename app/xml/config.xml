@@ -40,7 +40,7 @@
 		</staticfiles>
 	</page>
 
-	<page pageId="photogallery" menuId="photography">
+	<!-- <page pageId="photogallery" menuId="photography">
 		<title>Elina Brotherus - Photography</title>
 		
 		<meta>
@@ -51,7 +51,7 @@
 			<file for="CONTENT">photography.html</file>
 			<file for="BROWSER">gallery_browser.html</file>
 		</staticfiles>
-	</page>
+	</page> -->
 
 
 	<page pageId="editions" menuId="editions">
