@@ -1,0 +1,51 @@
+<script>
+	Brotherus.init.gallery = 1;
+	Brotherus.init.about = 1;
+	Brotherus.init.thumbs = 1;
+</script>
+<div id="browser" >
+	<div id="about">
+	
+		<div id="aboutBtn">
+			<!--a href="#helps" class="help dynamic" id="helpBrowser"> 
+				?<span>: Press lef and right to look around the series picture by picture. Press up and down to browse the thumbnail list </span>		
+			</a-->
+		<a  href="#aboutContent" class="shadowbox about">About this series</a>
+		</div>
+		<div id="aboutContent">
+		{{about}}
+		</div>
+	</div>
+
+	
+{{>gallery_browser}}
+	
+	<div id="browserControls">
+	
+		
+		<div class="browserBtn btnLeft"><!-- arrow left--></div>
+		<div class="browserBtn btnRight"><!-- arrow right--> </div>
+		<p class="picData">
+			<span class="picName"></span>
+			<span class="picDimensions"></span>
+		</p>
+		<p class="seriesData">
+			<span class="seriesName"> </span> 
+<!--			| <span class="seriesDate"> </span>-->
+		</p>		
+	</div>
+	
+	<!--thumbs container-->
+	
+
+	<div class=" column thumbsContainer">
+		<a class="arrowUp thumbsArrow">&nbsp;</a>
+		<div class="thumbsBgTop">
+			<div class="thumbsBgBottom">
+				<div class="thumbsMask"></div>
+			</div>
+		</div>
+		<a class="arrowDown thumbsArrow">&nbsp;</a>
+	</div>
+	
+</div>
