@@ -2,12 +2,10 @@ class App
   module Views
     class Layout < Mustache
 
-    # $this->setParam('PAGECLASS',$this->pageId);
-    # $this->setParam('TITLE',$this->pageNode->title);
-    # $this->setParam('NAVI',$this->generateNavi());
-    # $this->setParam('KEYWORDS',$this->pageNode->meta->key);
-    # $this->setParam('DESCRIPTION',$this->pageNode->meta->desc);
 
+      def page_class
+        @page_class
+      end
 
       def title
         @title ||= 'Welcome'

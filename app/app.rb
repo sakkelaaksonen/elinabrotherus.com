@@ -24,6 +24,7 @@ class App < Sinatra::Base
   helpers do
     def set_page (name)
       @current_page = settings.pages[name]
+      @page_class = name
     end
   end
   
@@ -80,21 +81,20 @@ class App < Sinatra::Base
  
  #photography
   
-  get %{\/photography\/:gallery\/?$} do
+  # get %{\/photography\/:gallery} do
     
-  # @galleries - collection of all galleries
-  # todo: memcache this whole output html with before & after filters?
-    set_page('photography')
-    @gallerytoken = params[:gallery] 
-    @galleries = JSON.parse(File.read('newfiles.json'))['galleries']
-    @gallery = @galleries.find { |g|  g['id'] == @gallerytoken}
-    @pics = @gallery['pics']
+  # # @galleries - collection of all galleries
+  # # todo: memcache this whole output html with before & after filters?
+  #   set_page('photography')
+  #   @gallerytoken = params[:gallery] 
+  #   @galleries = JSON.parse(File.read('newfiles.json'))['galleries']
+  #   @gallery = @galleries.find { |g|  g['id'] == @gallerytoken}
+  #   @pics = @gallery['pics']
     
-    # mustache :photography
-  end
+  #   mustache :photography
+  # end
   #photo main
   get %r{\/photography\/?$} do
-    
     set_page('photography')      
     mustache :photography_index
   end
