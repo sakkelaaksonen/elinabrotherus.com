@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<galleries newgid="1" newpid="1">
+<gallery id="" folder="giveMeAFolder">
+ 		<name>Give me a name</name>
+		<date>Give me a date like 11.12.1330</date>
+		<about>Give me some text</about>
+		<pic id="">
+			<name>Give me a name</name>
+			<lores>foo.jpg</lores>
+			<hires>foo_hires.jpg</hires>
+		</pic>
+ 	</gallery>	
+ </galleries>
