@@ -1,0 +1,19 @@
+#site structure
+menus:
+ - title: News
+   items: [{ id: news , url: /news , name: Current News  }]
+ - title: Works
+   items:
+    - { id: photography , url: /photography , name: Photography }
+    - {id: editions, name: Editions, url: /editions/ }
+    - {id: videos , url: /videos/ , name: Videos }
+ - title: Biography
+   items:
+    - { id: exhibitions , name: Exhibitions , url: /exhibitions/ }
+    - { id: bibliography , name: Bibliography ,url: /bibliography/ }
+ - title: Extras
+   items:
+    # - {id: wallpapers , name: Wallpapers , url: /wallpapers/}
+    - {id: links , url: /links/, name: Links}
+    - {id: contact , url: /contact/ , name: Contact}
+    - {id: guestbook , url: /guestbook/ , name: Guestbook}
