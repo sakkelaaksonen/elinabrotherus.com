@@ -122,10 +122,43 @@ class App < Sinatra::Base
   helpers( Sinatra::ConfigFile )
 
   helpers do
+
+
+# galleryxml = Nokogiri::XML::parse(File.read('xml/gallery.xml'))
+    # galleryhash =  galleryxml.xpath('//gallery').map do |node|
+    #   {
+    #     # childen: node.xpath('folder').text
+    #     id: node.attr('id'),
+    #     url: node.xpath('folder').text,
+    #     name: node.xpath('name').text,
+    #     pics: node.xpath('pic').each_with_index.map {|pic,i| {
+    #       id: i, 
+    #       src: "#{node.xpath('folder').text}/#{pic.xpath('lores').text}.jpg",
+    #       title: pic.xpath('title').text
+    #     }}
+
+    #   }   
+    #  end
+    #  galleryhash.to_json
+
+    #  newjson = JSON.parse(File.read('newfiles.json'))
+    #  newjson['galleries'].concat(galleryhash)
+    #  File.open('allgalleries.json','w') {|f| f.write(newjson.to_json)}
+
     def set_page (name)
       @current_page = settings.pages[name]
       @page_class = name
     end
+
+
+    def load_galleries
+      @galleries ||=  JSON.parse(File.read( 'allgalleries.json'))['galleries']
+    end
+
+    def get_gallery(with_id)
+      load_galleries.find {|g| g['id'] == with_id}
+    end
+
   end
 
 
@@ -150,28 +183,9 @@ class App < Sinatra::Base
   # home
 
   get '/' do
-    galleryxml = Nokogiri::XML::parse(File.read('xml/gallery.xml'))
-    galleryhash =  galleryxml.xpath('//gallery').map do |node|
-      {
-        # childen: node.xpath('folder').text
-        id: node.attr('id'),
-        url: node.xpath('folder').text,
-        name: node.xpath('name').text,
-        pics: node.xpath('pic').each_with_index.map {|pic,i| {
-          id: i, 
-          src: "#{node.xpath('folder').text}/#{pic.xpath('lores').text}.jpg",
-          name: pic.xpath('name').text
-        }}
-
-      }   
-     end
-     galleryhash.to_json
-
-     newjson = JSON.parse(File.read('newfiles.json'))
-     newjson['galleries'].concat(galleryhash)
-     File.open('allgalleries.json','w') {|f| f.write(newjson.to_json)}
-     content_type :json
-     File.read( 'allgalleries.json')
+    
+     # content_type :json
+     "/photos/#{get_gallery('the-new-painting')['pics'].first['src']}"
     # ENV.inspect
 
     # redirect to('/news')
