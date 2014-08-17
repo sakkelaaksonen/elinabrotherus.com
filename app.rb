@@ -1,96 +1,200 @@
-require 'sinatra/base'
-require "sinatra/config_file"
-require 'mustache/sinatra'
-require 'sinatra/assetpack'
-require 'json'
+%W(
+  sinatra/base
+  sinatra/config_file
+  mustache/sinatra
+  sinatra/assetpack
+  json
+  nokogiri
+  sinatra/sequel
+).each { |pack| require pack }
 
 class App < Sinatra::Base
-  
-  register Mustache::Sinatra
-  register Sinatra::AssetPack 
-  register Sinatra::ConfigFile
-  
-  # must set app root for asset pack
-  set( :root, File.dirname(__FILE__) )
-  
-  #super classes
-  require './views/layout'
-  require './views/photo_gallery'
-  #then the rest in no particular order
-  Dir.glob("./views/*.rb") { |file| require file }
-  
-  
 
-  helpers( Sinatra::ConfigFile)
+  register Mustache::Sinatra
+  register Sinatra::AssetPack
+  # register Sinatra::Sequel
+  register Sinatra::ConfigFile
+
+  config_file("#{settings.root}/config.yml")
+
+  #
+  # stuff inside this block is set only at startup
+  #
+  configure do
+    # set( :database, 'sqlite://elinabrotherus.db')
+    #Sequel sqlite3 / pq database for images
+    set( :root, File.dirname(__FILE__) )
+
+    #db Migrations
+    # database.migration "create images" do
+    #   database.create_table :images do
+    #     primary_key :id
+    #     text        :title
+    #     text        :url
+    #     text        :edition
+    #     text        :year
+    #     text        :dimensions
+    #     # timestamp   :bizzle, :null => false
+
+    #     index :url, :unique => true
+    #     # index :title, :url => true
+    #   end
+    # end
+
+    # database.migration "create galleries" do
+    #   database.create_table :galleries do
+    #     primary_key :id
+    #     text        :name
+    #     text        :url
+
+    #     index :url, :unique => true
+    #   end
+    # end
+
+    # #DB classes
+    # class Gallery < Sequel::Model
+    #   one_to_many :images, eager: [:images]
+    # end
+
+    # class Image < Sequel::Model
+    #    many_to_one :gallery
+    # end
+
+
+    # Load models
+    # Dir.glob("#{settings.root}/models/*.rb") { |file| require file }
+
+    ##
+    # Views
+
+    #view super classes
+    require "#{settings.root}/views/layout"
+    require "#{settings.root}/views/photo_gallery"
+    #then the rest in no particular order
+    Dir.glob("./views/*.rb") { |file| require file }
+
+
+
+    # Mustache settings
+    set( :mustache, {
+           :views     => 'views',
+           :templates => 'templates'
+    })
+
+
+    #Asset pipeline settings
+    assets {
+
+      serve '/js',     from: './js'        # Default
+      serve '/css',    from: './css'       # Default
+      serve '/images', from: './images'    # Default
+
+      # The second parameter defines where the compressed version will be served.
+      # (Note: that parameter is optional, AssetPack will figure it out.)
+      # js :app, '/js/app.js', [
+      #   '/js/vendor/**/*.js',
+      #   '/js/lib/**/*.js'
+      # ]
+
+      js :app, [
+        '/js/*.js',
+        '/js/**/*.js',
+      ]
+
+      css :application, './css/app.css', [
+        # './css/main.less',
+        '/css/styles.css'
+      ]
+      #use default compressions
+    }
+
+
+
+  end
+
+
+
+  # must set app root for asset pack
+
+  ##
+
+  # Helpers
+  helpers( Sinatra::ConfigFile )
+
   helpers do
     def set_page (name)
       @current_page = settings.pages[name]
       @page_class = name
     end
   end
-    
-  config_file( "#{settings.root}/config.yml")
 
-  set :mustache, {
-    :views     => 'views',
-    :templates => 'templates'
-  }
-  
-  assets {
 
-    serve '/js',     from: './js'        # Default
-    serve '/css',    from: './css'       # Default
-    serve '/images', from: './images'    # Default
 
-    # The second parameter defines where the compressed version will be served.
-    # (Note: that parameter is optional, AssetPack will figure it out.)
-    js :app, '/js/app.js', [
-      '/js/vendor/**/*.js',
-      '/js/lib/**/*.js'
-    ]
 
-    css :application, './css/styles.css', [
-      './css/css.less'
-    ]
-    #use default compressions
-    }
+
+
+  # get '/set/' do
+  #   # @img =
+  #   Image.create({
+  #     title: params[:title],
+  #     dimensions: params[:dimensions],
+  #     url: params[:url], #todo. make this from model
+  #     edition: params[:edition],
+  #    })
+  # end
+
+  # get '/get/:name' do
+  #  Image.by_title( :name).to_s
+  # end
+
   # home
 
+  get '/' do
+    galleryxml = Nokogiri::XML::parse(File.read('xml/gallery.xml'))
+    galleryhash =  galleryxml.xpath('//gallery').map do |node|
+      {
+        # childen: node.xpath('folder').text
+        id: node.attr('id'),
+        url: node.xpath('folder').text,
+        name: node.xpath('name').text,
+        pics: node.xpath('pic').each_with_index.map {|pic,i| {
+          id: i, 
+          src: "#{node.xpath('folder').text}/#{pic.xpath('lores').text}.jpg",
+          name: pic.xpath('name').text
+        }}
 
-  before do
-  
+      }   
+     end
+     galleryhash.to_json
 
+     newjson = JSON.parse(File.read('newfiles.json'))
+     newjson['galleries'].concat(galleryhash)
+     File.open('allgalleries.json','w') {|f| f.write(newjson.to_json)}
+     content_type :json
+     File.read( 'allgalleries.json')
+    # ENV.inspect
+
+    # redirect to('/news')
   end
+  # #news
+  #  get %r{\/news\/?$} do
 
-  
- #news
+  #    set_page('news')
+  #    mustache :news
+  #  end
 
-  get '/menu' do
-    
-  end
+  #photography
 
-  get '/' do 
-    redirect to('/news')
-  end
-  
-  get %r{\/news\/?$} do
-
-    set_page('news')
-    mustache :news
-  end
- 
- #photography
-  
   # get %{\/photography\/:gallery} do
-    
+
   # # @galleries - collection of all galleries
   # # todo: memcache this whole output html with before & after filters?
   #   set_page('photography')
-  #   @gallerytoken = params[:gallery] 
+  #   @gallerytoken = params[:gallery]
   #   @galleries = JSON.parse(File.read('newfiles.json'))['galleries']
   #   @gallery = @galleries.find { |g|  g['id'] == @gallerytoken}
   #   @pics = @gallery['pics']
-    
+
   #   mustache :photography
   # end
   #photo main
@@ -98,59 +202,43 @@ class App < Sinatra::Base
     set_page('photography')
     @galleries = JSON.parse(File.read('newfiles.json'))['galleries']
     @gallery = @galleries.find { |g|  g['front'] == @gallerytoken}
-    
+
     p @galleries.first
-    
-    # @pics = @gallery['pics']
-     mustache :photography_index
+
+    mustache :photography_index
+  end
+
+  #
+  # Static pages:
+  # Could do this with filters as well but
+  # This meta solutions seems more maintainable and far more DRY
+  #
+  %W(
+    news
+    editions
+    videos
+    exhibitions
+    bibliography
+    links
+    contact
+  ).each do |pagetoken|
+    get %r{/#{pagetoken}/?$} do
+      set_page(pagetoken)
+      mustache( pagetoken.to_sym)
+    end
   end
 
 
-  
-  #Editions
-  get %r{\/editions\/?$} do
-    set_page('editions')
-    mustache :editions
-  end
+  #####
+  # Guestbook
+  #####
+  #
 
-
-  #Videos
-  get %r{\/videos\/?$} do
-    set_page('videos')
-    mustache :videos
-  end
-  
-  #Exhibitions
-  get %r{\/exhibitions\/?$} do
-    set_page('exhibitions')
-    mustache :exhibitions
-  end
-
-  #Bibliography
-  get %r{\/bibliography\/?$} do
-    set_page('bibliography')
-    mustache :bibliography
-  end
-  
-  #Links
-  get %r{\/links\/?$} do
-    set_page('links')
-    mustache :links
-  end
-
-  #Contact
-  get %r{\/contact\/?$} do
-    set_page('contact')
-    mustache :contact
-  end
-
-  #Guestbook
-  
-  #static entries for ajax
+  # static entries for ajax
   get '/guestbook/entries.xml' do
     content_type :xml
     File.read('xml/guestbook.xml')
-  end  
+  end
 
   post %r{\/guestbook\/save\/?$} do
     @entry_name= params['entryName']
@@ -159,10 +247,10 @@ class App < Sinatra::Base
   end
 
   post %r{\/guestbook\/delete\/?$} do
-   'no way dude' 
-    @entry_number= params['entry']
-    
-    params.to_s
+    'no way dude'
+    # @entry_number= params['entry']
+
+    # params.to_s
   end
 
   get %r{\/guestbook\/?$} do
@@ -171,7 +259,4 @@ class App < Sinatra::Base
   end
 
 
-  
-  #gallery from JSON
-  
 end
