@@ -1,11 +1,11 @@
 {{#pics}}
-<div id="{{pic['id']}}" class="pic">
-  <img alt="{{pic['title']}}" title="{{pic['title']}}" src="{{pic['url']}}" />
-    <h3>{{pic['title']}}</h3>
-    <p>
-    Dimensions: {{pic['dimensions']}} |
-    Year: {{pic['year']}} |
-    Edition: {{pic['edition']}}
-    </p>
-    </div>
-{{/pic}}
+<div id="{{id}}" class="pic">
+  <img alt="{{pname}}" title="{{name}}" data-original="/photos/{{src}}" />
+  <h3>{{name}}</h3>
+  <p>
+  Dimensions: {{dimensions}} |
+  Year: {{year}} |
+  Edition: {{edition}}
+  </p>
+</div>
+{{/pics}}

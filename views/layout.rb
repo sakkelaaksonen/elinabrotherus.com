@@ -1,7 +1,19 @@
 class App
   module Views
+    
     class Layout < Mustache
 
+      def foo
+        @foo
+      end
+
+      def css
+        @css
+      end
+
+      def js
+        @js
+      end
 
       def page_class
         @page_class
@@ -26,6 +38,9 @@ class App
       def gacode
         App.settings.gacode
       end
+
+
+
 
       #EOC
     end

@@ -1,21 +1,18 @@
 class App
   module Views
     class PhotoGallery < Layout
-      def gallery_pics
-        @pics      
+      def pics
+        @pics
       end
 
       def gallery_list
         @galleries.map do |g|
-        
           {
             active_class: '',
             name: g['name'],
             year: g['year'],
-            url: 'foo.jpg'
+            url: g['url']
           }
-        
-          
         end
       end
     end
