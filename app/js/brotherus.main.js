@@ -47,5 +47,7 @@ Brotherus.inits = function(){
 //		$('.newsItem:first').addClass('first').find('h3 span.date').after(newTag);
 //	}
 //	
+
+
 };
 

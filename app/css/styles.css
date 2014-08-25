@@ -647,9 +647,16 @@ div.news p.seriesData { display:none; }
 }
 /* pile layout*/
 @media  (max-width: 900px){
+  #headerBox {min-height:0;height: auto;}
+  #headerBox h1 {
+    min-height:0;
+    height: auto;
+    line-height: 3rem;
+  }
+  #contentBox {
+    padding-top:.5rem;
+  }
   #galleryColumn {clear:both;  float: none;}
   #browser {margin-top:15em;}
   #browser .pic img {width:80%;}
-
-  
 }
