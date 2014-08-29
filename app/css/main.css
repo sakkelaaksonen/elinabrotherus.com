@@ -168,7 +168,7 @@ font-family:serif;
 
 .naviSection li a span.btnSmall {
 	margin:1px 8px 0px 0px;
-	background:transparent url(btnSmall_sprite.gif) no-repeat;
+	background:transparent url(/images/btnSmall_sprite.gif) no-repeat;
 	float:left;
 	display:block;
 	height:10px;

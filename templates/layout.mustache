@@ -25,7 +25,9 @@
     </header>
     <div id="contentBox" class="container-fluid">
       <div class="row">
-        <div class="col-xs-12 col-sm-3 col-md-2"><div class="row nav-row">{{>navi}}</div></div>
+        <nav class="col-xs-12 col-sm-3 col-md-2">
+          <div class="row nav-row">{{>navi}}</div>
+        </nav>
         {{{yield}}}
       </div>
     </div>
@@ -38,13 +40,10 @@
     </footer>
     {{! CDN assets}}
     <script type="text/javascript">
-    var Brotherus = {
-    instances:{},
-    };
+    var Brotherus = {instances:{}};
     </script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
     <script src="/js/load.js"></script>
-
     {{! compiled local js assets }}
     {{! {js} }}
     {{! google me }}
