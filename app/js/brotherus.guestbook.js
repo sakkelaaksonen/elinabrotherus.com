@@ -99,7 +99,3 @@ Brotherus.Guestbook = function(mode) {
   }
   this.init();
 }
-
-$(function() {
-  Brotherus.instances.guestbook = new Brotherus.Guestbook();
-})

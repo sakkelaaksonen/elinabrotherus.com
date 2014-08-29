@@ -27,12 +27,12 @@ class App < Sinatra::Base
     #   '/js/vendor/**/*.js',
     #   '/js/lib/**/*.js'
     # ]
-    js :all, 'all.js', [
-      "/js/jquery.cookie.js", 
-      "/js/jquery.scrollTo-1.4.2-min.js", 
-      # "/js/jquery.viewport.mini.js",
-      "/js/jquery.form.js",
-      "/js/brotherus.guestbook.js"
+    js :loader, 'load.js', [
+      # "/js/jquery.cookie.js", 
+      # "/js/jquery.scrollTo-1.4.2-min.js", 
+      # # "/js/jquery.viewport.mini.js",
+      # "/js/jquery.form.js",
+      # "/js/brotherus.guestbook.js"
 
 
       # "/js/brotherus.functions.js",
