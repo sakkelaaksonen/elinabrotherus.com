@@ -7,6 +7,7 @@
   nokogiri
   sass
 ).each { |pack| require pack }
+
 class App < Sinatra::Base
   register Mustache::Sinatra
   register Sinatra::AssetPack
@@ -30,7 +31,8 @@ class App < Sinatra::Base
       "/js/jquery.cookie.js", 
       "/js/jquery.scrollTo-1.4.2-min.js", 
       # "/js/jquery.viewport.mini.js",
-      "/js/jquery.form.js"
+      "/js/jquery.form.js",
+      "/js/brotherus.guestbook.js"
 
 
       # "/js/brotherus.functions.js",
@@ -40,7 +42,7 @@ class App < Sinatra::Base
     ]
     css :all, './css/all.css', [
       # './css/main.less',
-      '/css/styles.css'
+      '/css/eb.css'
     ]
     #use default compressions
   }
@@ -122,14 +124,15 @@ class App < Sinatra::Base
     end
   end
 
-
+# set asset manager erb output 
+# to mustache's scope via instance method inheritance
   before  do
     @css = compiled_assets[:css]
     @js = compiled_assets[:js]
   end
   
   get '/' do
-    # compiled_assets.values
+    compiled_assets[:js]
   end
 
   #news

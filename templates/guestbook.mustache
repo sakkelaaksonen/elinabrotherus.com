@@ -1,7 +1,17 @@
-<script>
-  Brotherus.init.guestbook = 1;
-</script>
 <div id="guestbookColumn" class="column">
-
+<form method="post" action="/guestbook/save" class="gb clearfix"><h2>Guestbook</h2><p>Leave a message</p> 
+      <fieldset> 
+        <label for="entryName" class="gblabel">Name</label> 
+        <input class="gbfield" type="text" id="entryName" name="entryName" maxlength="40" tabindex="1"/> 
+        <a href="#helps" id="helpGuestbook" class="help">? 
+          <span>: No html tags or other code. Just text. Maximum 1000 characters</span> 
+        </a>
+        <label for="entryMessage" class="gblabel">Message</label> 
+        <textarea  maxlength="1000" class="gbfield" id="entryMessage" name="entryMessage" tabindex="2"></textarea> 
+      </fieldset> 
+      <div class="textRight"> 
+      <input type="submit" value="add to guestbook" id="add" tabindex="3"/> 
+      </div> 
+    </form>
 
 </div>

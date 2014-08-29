@@ -1,88 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{title}} - Elina Brotherus</title>
-  <meta http-equiv="Content-Type" content="text/html; utf-8" />
-  <meta name="keywords" content="{{meta_keywords}}" />
-  <meta name="description" content="{{meta_desc}}" />
-  <link rel="icon" type="image/gif" href="/favicon.gif" />
-  <!-- functions and main function -->    
-  <!--styles -->
-
-  {{! <link rel="stylesheet" href="/css/styles.css" media="screen" type="text/css" /> }}
-
-  {{! extra css }}
-
-  
-  <!--[if IE 6]>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{title}} - Elina Brotherus</title>
+    <meta http-equiv="Content-Type" content="text/html; utf-8" />
+    <meta name="keywords" content="{{meta_keywords}}" />
+    <meta name="description" content="{{meta_desc}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/gif" href="/favicon.gif" />
+    <!--[if IE lt 8]>
     <script type="text/javascript">
     alert('Please update your browser. This version is not supported anymore.'):
     </script>
-  <![endif]-->
-
-  
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
-<script src="https://raw.github.com/tuupola/jquery_lazyload/master/jquery.lazyload.js"></script>
-
-<script type="text/javascript">
-    var Brotherus = {
-      // gallery: {},
-      // running:{},
-      // // effects:{},
-      // init:{}
-    };
-    // Brotherus.gallery = {};
-    // Brotherus.running = {};
-    // Brotherus.effects = {};
-    // Brotherus.init = {};
-</script>
-
-<!--! compiled css -->
-{{{css}}}
-  
-<!--! compiled csjs-->
-
-
-</head>
-
-<body>
-{{foo}}
-<div id="pageContainer"  class="clearfix {{page_class}}">
-  <div id="pageShadow">
-  <!-- header box-->
-    <div id="headerBox">
+    <![endif]-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Optional theme -->{{!
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> }}
+    <!-- compiled css -->
+    {{{css}}}
+  </head>
+  <body>
+    <header id="headerBox" class="container-fluid">
       <h1><a href="/">Elina Brotherus</a></h1>
-    </div>
-    <!-- /header box ends-->
-    
-    <!-- content box -->
-    <div id="contentBox" class="clearfix">
-      <div id="naviColumn" class="column">
-      {{>navi}}
-      <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.elinabrotherus.com&amp;layout=box_count&amp;show_faces=false&amp;width=120&amp;action=like&amp;font=verdana&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:65px;" allowTransparency="true"></iframe>
+    </header>
+    <div id="contentBox" class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2"><div class="row nav-row">{{>navi}}</div></div>
+        {{{yield}}}
       </div>
-      {{{yield}}}
-    </div><!--content box ends -->
-  </div><!--/pageShadow ends -->
-</div><!-- pageContainer ends-->
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("{{gacode}}");
-pageTracker._trackPageview();
-} catch(err) {}
-
-//init main stuff
-$(function(){
-  alert(1);
-  $(".pic img").lazyload({
+    </div>
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+          <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.elinabrotherus.com&amp;layout=box_count&amp;show_faces=false&amp;width=120&amp;action=like&amp;font=verdana&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:65px;" allowTransparency="true"></iframe>
+        </div>
+      </div>
+    </footer>
+    {{! CDN assets}}
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://raw.github.com/tuupola/jquery_lazyload/master/jquery.lazyload.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    var Brotherus = {
+    instances:{},
+    };
+    </script>
+    {{! compiled local js assets }}
+    {{{js}}}
+    {{! google me }}
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("{{gacode}}");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    //init main stuff
+    $(function(){
+    $(".pic img").lazyload({
     effect : "fadeIn"
-  });
-});
-</script>
-</body>
+    });
+    });
+    </script>
+  </body>
 </html>

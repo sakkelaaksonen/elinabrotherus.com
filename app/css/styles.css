@@ -641,6 +641,8 @@ hr {
   top:1px;
 }
 div.news p.seriesData { display:none; }
+
+
 /*#wide screen layout*/
 @media  (min-width: 900px){
   #browser .pic img { width: 90%}
