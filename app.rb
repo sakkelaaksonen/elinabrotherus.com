@@ -135,11 +135,11 @@ class App < Sinatra::Base
     compiled_assets[:js]
   end
 
-  #news
-  get %r{/news/?$} do
-    set_page('news')
-    mustache :news
-  end
+  # #news
+  # get %r{/news/?$} do
+  #   set_page('news')
+  #   mustache :news
+  # end
   #photography
   get '/photography/:gallery' do
     # @galleries - collection of all galleries

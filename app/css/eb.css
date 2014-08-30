@@ -5,12 +5,17 @@ body p, a ,h1, h2,h3,h4,h5{
     color:#444444;
 }
 
+
+a:visited {
+  color:#ddd;
+}
+
 body {
    font-size:2rem;
    line-height:2.4rem;
 }
 
-a:hover {
+a:hover, a:visited {
   color:#666;
   text-decoration: none;
 }
@@ -78,6 +83,7 @@ nav li {
   text-transform:capitalize;
   border-bottom:1px dotted #444444;
 }
+
 nav li a {
   font-family:verdana;
   color:#444444;
@@ -90,6 +96,7 @@ nav li a {
   -o-transition:background 0.5s ease-in-out;
   transition:background 0.5s ease-in-out;
 }
+
 nav li a:hover {
   background-color:#f0f0f0;
   -moz-transition:background 0.5s ease-in-out;
@@ -98,7 +105,7 @@ nav li a:hover {
   transition:background 0.5s ease-in-out;
 }
 
-  nav a span.btnSmall {
+nav a span.btnSmall {
   margin:1px 8px 0px 0px;
   background:transparent url(/images/btnSmall_sprite.gif) no-repeat;
   /*background-size: 200%;*/
@@ -120,7 +127,70 @@ nav li a span.btnSmallRight {
 nav li a:hover span.btnSmallRight {
   background-position:bottom right;
 }
+.gallery-grid li {
+  display: block;
+  list-style: :none;
+  height: 30rem;
+  width: 20rem;
+  margin:5rem;
+  float: left;
+}
+/*.gallery-grid li a {
+  
+}*/
 
+.thumb-link {
+  display: block;
+  border:3px double #ccc;
+  height: 22rem;
+  width: 22rem;
+  margin-bottom:2rem;  
+  border-radius:12rem ;
+
+  overflow: hidden;
+  -moz-transition:border-radius .2s ease-out;
+  -webkit-transition:border-radius .2s ease-out;
+  -o-transition:border-radius .2s ease-out;
+  transition:border-radius .2s ease-out;
+
+  /*box-shadow: 2px 2px 3px 2px #ccc;*/
+}
+
+.thumb-link:hover {
+  border-radius:0rem ;
+  
+  -moz-transition:border-radius 0.3s ease-in-out;
+  -webkit-transition:border-radius 0.3s ease-in-out;
+  -o-transition:border-radius 0.3s ease-in-out;
+  transition:border-radius 0.3s ease-in-out;
+
+
+
+
+  /*box-shadow: 2px 2px 3px 2px #ccc;*/
+}
+
+.thumb-link img {
+  opacity:.5;
+  -moz-transition:opacity 0.3s ease-in-out;
+  -webkit-transition:opacity 0.3s ease-in-out;
+  -o-transition:opacity 0.3s ease-in-out;
+  transition:opacity 0.3s ease-in-out;
+
+}
+
+.thumb-link:hover img { 
+  opacity: 1;
+}
+
+
+.gallery-grid .name {
+  display: block;
+  text-align: center;
+  border-top:1px dashed #bbb;
+  padding:1rem 0 0 0;
+  font-size:2.5rem;
+}
 /*@media  (min-width: 900px){
   #browser .pic img { width: 90%}
 }
