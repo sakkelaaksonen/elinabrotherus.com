@@ -141,28 +141,26 @@ nav li a:hover span.btnSmallRight {
 
 .thumb-link {
   display: block;
-  border:3px double #ccc;
+  
   height: 22rem;
   width: 22rem;
   margin-bottom:2rem;  
-  border-radius:12rem ;
-
-  overflow: hidden;
-  -moz-transition:border-radius .2s ease-out;
+    overflow: hidden;
+/*  -moz-transition:border-radius .2s ease-out;
   -webkit-transition:border-radius .2s ease-out;
   -o-transition:border-radius .2s ease-out;
-  transition:border-radius .2s ease-out;
+  transition:border-radius .2s ease-out;*/
 
   /*box-shadow: 2px 2px 3px 2px #ccc;*/
 }
 
 .thumb-link:hover {
-  border-radius:0rem ;
+
   
-  -moz-transition:border-radius 0.3s ease-in-out;
+/*  -moz-transition:border-radius 0.3s ease-in-out;
   -webkit-transition:border-radius 0.3s ease-in-out;
   -o-transition:border-radius 0.3s ease-in-out;
-  transition:border-radius 0.3s ease-in-out;
+  transition:border-radius 0.3s ease-in-out;*/
 
 
 
@@ -187,9 +185,37 @@ nav li a:hover span.btnSmallRight {
 .gallery-grid .name {
   display: block;
   text-align: center;
-  border-top:1px dashed #bbb;
+  /*border-top:1px dashed #bbb;*/
   padding:1rem 0 0 0;
   font-size:2.5rem;
+}
+
+.clear {clear: both;}
+
+#editions  h3 {margin-top:2em; margin-bottom:1em;}
+
+.page-title {
+  border-bottom:1px solid #ccc;
+  margin-bottom:1.2em;
+}
+
+.rss-icon {
+background:url(/images/feed-icon-28x28.png) no-repeat 100% 50%;
+font-size:0.5em;
+padding:2em;
+float:right;
+position: relative;
+top:-22px
+} 
+.meta {margin-bottom:2em;}
+/*#videos  iframe { margin:2em 2em 2em 0; float:left;}*/
+#videos  iframe { margin:7px 2em .5em 0; float:left;}
+#videos  iframe.part { margin:.5em .5em .5em 0; float:left;}
+#videos .section {clear:both; margin-bottom:3em;}
+
+.synopsis p {
+  line-height: 150%;
+  font-size:0.85em;
 }
 /*@media  (min-width: 900px){
   #browser .pic img { width: 90%}
