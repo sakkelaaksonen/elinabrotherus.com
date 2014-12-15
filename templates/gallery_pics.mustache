@@ -1,11 +1,11 @@
 {{#pics}}
-<div id="{{id}}" class="pic">
-  <img alt="{{pname}}" title="{{name}}" data-original="/photos/{{src}}" />
-  <h3>{{name}}</h3>
+<li id="{{id}}" class="pic">
+  <h2>{{name}}</h2>
   <p>
   Dimensions: {{dimensions}} |
   Year: {{year}} |
   Edition: {{edition}}
   </p>
-</div>
+  <img class="image-source" alt="{{pname}}" title="{{name}}" data-original="/photos/{{src}}" />
+</li>
 {{/pics}}

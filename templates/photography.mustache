@@ -1,16 +1,7 @@
-<div class="column midColumn clearfix"> 
-	<div class="midTop clearfix">
-		<div class="midBottom clearfix">
-		<h2>Photography</h2>
-		      <ul>
-        {{#gallery_list}}
-        {{>gallery_list_item}}
-        {{/gallery_list}}
-      </ul>
-		</div>
-	</div>
-</div>
+<div id="gallery" class="col-xs-12 col-sm-9 col-md-8">
 
-<div class="column clearfix" id="galleryColumn">
-{{>gallery_browser}}
+		<h2>{{gallery_name}}</h2>
+      <ul class="picturelist">
+        {{>gallery_pics}}
+      </ul>
 </div>

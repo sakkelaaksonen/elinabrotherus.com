@@ -212,10 +212,30 @@ top:-22px
 #videos  iframe { margin:7px 2em .5em 0; float:left;}
 #videos  iframe.part { margin:.5em .5em .5em 0; float:left;}
 #videos .section {clear:both; margin-bottom:3em;}
-
+#gallery {text-align: center;}
 .synopsis p {
   line-height: 150%;
   font-size:0.85em;
+}
+
+.picturelist {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.picturelist .pic {
+  display: block;  
+  margin: 0 0 12em 0;
+}
+.image-source {
+  display: block;
+  margin: 2em auto;
+  border:1px solid #ccc;
+  padding:3px;
+  box-shadow: 1px  1px 3px 2px #ddd;
+  max-width: 100%;
 }
 /*@media  (min-width: 900px){
   #browser .pic img { width: 90%}
