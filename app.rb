@@ -132,14 +132,18 @@ class App < Sinatra::Base
   end
   
   get '/' do
-    compiled_assets[:js]
+    #compiled_assets[:js]
+
+    redirect to( '/news')
+    # set_page('news')
+    # mustache :news
   end
 
-  # #news
-  # get %r{/news/?$} do
-  #   set_page('news')
-  #   mustache :news
-  # end
+  #news
+  get %r{/news/?$} do
+    set_page('news')
+    mustache :news
+  end
   #photography
   get '/photography/:gallery' do
     # @galleries - collection of all galleries
@@ -157,8 +161,10 @@ class App < Sinatra::Base
   get %r{/photography/?$} do
     set_page('photography')
     @galleries = load_galleries
-    @gallery = get_gallery('what-if')
-    @pics = @gallery['pics']
+    
+    # @list = @galleries.map {|g| g[cover[:pics].first}
+    # @gallery = get_gallery('what-if')
+    # @pics = @gallery['pics']
     # @pics.to_json
     mustache :photography_index
   end
