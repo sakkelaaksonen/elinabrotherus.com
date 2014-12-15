@@ -10,7 +10,7 @@ class App
             name: g['name'],
             year: g['year'],
             url: g['url'],
-            cover: g['pics'].first['src']
+            cover: "#{g['url']}/#{g['pics'].first['id']}.jpg"
           }
         end
       end

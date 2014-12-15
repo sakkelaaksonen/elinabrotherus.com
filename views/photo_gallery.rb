@@ -5,6 +5,10 @@ class App
         @pics || @gallery['pics']
       end
 
+      def url 
+        @gallery['url']
+      end
+
     end
   end
 end
