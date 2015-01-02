@@ -8,6 +8,8 @@
     <meta name="description" content="{{meta_desc}}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/gif" href="/favicon.gif" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css' />
     <!--[if IE lt 8]>
     <script type="text/javascript">
     alert('Please update your browser. This version is not supported anymore.'):
@@ -25,8 +27,10 @@
     </header>
     <div id="contentBox" class="container-fluid">
       <div class="row">
-        <nav class="col-xs-12 col-sm-3 col-md-2">
-          <div class="row nav-row">{{>navi}}</div>
+        <nav>
+            <div class="col-xs-12 col-sm-3 col-md-2">
+              <div class="row nav-row">{{>navi}}</div>
+            </div>
         </nav>
         {{{yield}}}
       </div>
