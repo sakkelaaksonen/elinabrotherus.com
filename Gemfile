@@ -8,5 +8,6 @@ sass
 shotgun
 nokogiri
 rake
+crack
 ).each {|pack| gem pack}
 gem 'sinatra-assetpack', :require => 'sinatra/assetpack'

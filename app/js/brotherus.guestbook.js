@@ -1,16 +1,21 @@
 Brotherus.Guestbook = function(mode) {
   //  this.cookieVals = { n:'brotherus_guestbook',v:'set', s:'/', d:1000 };
   this.edit = mode;
-  this.feedUrl = '/guestbook/entries.xml';
+  // this.feedUrl = '/guestbook/entries.xml';
+  this.feedUrl = '/guestbook/entries.json';
   this.feed;
   this.$container = $('#js-entries');
   var guestbook = this;
 
   //public
-  this.messageHtml = function(entryCount, entryName, entryMessage, pubDate) {
-    return '<div id="entry_' + entryCount + '" class="guestbook-entry col-xs-12 col-sm-12">'
-      // +(guestbook.edit == 2 ? '<a class="delete" href="/guestbook/delete/" id="delete_entry_'+entryCount+'">delete this entry</a>' : '' )
-      + '<h4 class="entryName">' + entryName + '</h4>' + '<p class="entryMEssage">' + entryMessage + '</p>' + '<p class="date">' + pubDate + '</p></div>';
+  this.messageHtml = function(entry, index) {
+    console.log(arguments)
+    return [
+      '<div id="entry_', index, '" class="guestbook-entry col-xs-12 col-sm-12">',
+      '<h4 class="entryName">', entry.name, '</h4>',
+      '<p class="entryMEssage">', entry.message, '</p>',
+      '<p class="date">', entry.date, '</p></div>'
+    ].join('');
   }
 
   //private
@@ -22,13 +27,10 @@ Brotherus.Guestbook = function(mode) {
     $('.guestbook-entry').remove();
 
     return $.ajax({
-      dataType: 'xml',
+      dataType: 'json',
       type: 'get',
       cache: 0,
       url: guestbook.feedUrl,
-      data: {
-        'do': 'get'
-      },
       error: function(data) {
         alert('error');
         try {
@@ -37,16 +39,9 @@ Brotherus.Guestbook = function(mode) {
           alert('cant get guestbook entries')
         }
       },
-      success: function(xmlData) {
-
-        $('entry', xmlData).each(function(i) {
-          console.log($(this).attr('active') !== '0')
-          if ($(this).attr('active') !== 0) {
-            var entryName = $(this).find('name').text();
-            var entryMessage = $(this).find('message').text();
-            var pubDate = $(this).find('date').text();
-            items.push(guestbook.messageHtml(i, entryName, entryMessage, pubDate));
-          }
+      success: function(jsondata) {
+        $(jsondata.guestbook.entry).each(function(index, entry) {
+          items.push(guestbook.messageHtml(entry, index));
         });
 
         column.append(items.reverse().join(''));

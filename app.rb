@@ -6,6 +6,7 @@
   json
   nokogiri
   sass
+  crack
 ).each { |pack| require pack }
 
 class App < Sinatra::Base
@@ -191,10 +192,20 @@ class App < Sinatra::Base
   # Guestbook
   #####
   #
+
+
+  get '/guestbook/entries.json' do
+    # content_type :xml
+    
+    content_type :json
+    Crack::XML.parse(File.read('xml/guestbook.xml')).to_json;
+    # File.read('json/guestbook.json');
+  end
+
   # static entries for ajax
   get '/guestbook/entries.xml' do
     content_type :xml
-    File.read('xml/guestbook.xml')
+    File.read('xml/guestbook.xml');
   end
   post %r{/guestbook/save/?$} do
     @entry_name= params['entryName']
