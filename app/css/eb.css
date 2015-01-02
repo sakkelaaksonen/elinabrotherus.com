@@ -59,8 +59,17 @@ header h1 a {
 }
 
 nav {
+
   /*border-right:10px solid linear-gradient(90deg, rgb(191, 191, 191) 30%, rgb(255, 255, 255) 70%);*/
 }
+
+.affix, 
+.affix-top,
+.affix-bottom { width: 230px;}
+
+.affix { top:3rem;} 
+.affix-top {}  
+.affix-bottom {}
 
 footer{
 margin-top:3rem;

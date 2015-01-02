@@ -25,13 +25,15 @@
     <header id="headerBox" class="container-fluid">
       <h1><a href="/">Elina Brotherus</a></h1>
     </header>
+    
     <div id="contentBox" class="container-fluid">
       <div class="row">
-        <nav >
-            <div class="col-xs-12 col-sm-3 col-md-2">
-              <div class="row nav-row">{{>navi}}</div>
-            </div>
+      <div class="col-xs-12 col-sm-3 col-md-2">
+        <nav data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+        {{>navi}}
         </nav>
+      </div>
+
         {{{yield}}}
       </div>
     </div>
