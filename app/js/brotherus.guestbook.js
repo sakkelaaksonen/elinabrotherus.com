@@ -3,12 +3,12 @@ Brotherus.Guestbook = function(mode) {
   this.edit = mode;
   this.feedUrl = '/guestbook/entries.xml';
   this.feed;
-  this.$container = $('#guestbookColumn');
+  this.$container = $('#js-entries');
   var guestbook = this;
 
   //public
   this.messageHtml = function(entryCount, entryName, entryMessage, pubDate) {
-    return '<div id="entry_' + entryCount + '" class="guestbook-entry">'
+    return '<div id="entry_' + entryCount + '" class="guestbook-entry col-xs-12 col-sm-12">'
       // +(guestbook.edit == 2 ? '<a class="delete" href="/guestbook/delete/" id="delete_entry_'+entryCount+'">delete this entry</a>' : '' )
       + '<h4 class="entryName">' + entryName + '</h4>' + '<p class="entryMEssage">' + entryMessage + '</p>' + '<p class="date">' + pubDate + '</p></div>';
   }
@@ -18,11 +18,10 @@ Brotherus.Guestbook = function(mode) {
     var column = guestbook.$container;
     var items = [];
 
-
     //clean up old entries
     $('.guestbook-entry').remove();
 
-    $.ajax({
+    return $.ajax({
       dataType: 'xml',
       type: 'get',
       cache: 0,
@@ -39,7 +38,6 @@ Brotherus.Guestbook = function(mode) {
         }
       },
       success: function(xmlData) {
-
 
         $('entry', xmlData).each(function(i) {
           console.log($(this).attr('active') !== '0')
@@ -63,13 +61,18 @@ Brotherus.Guestbook = function(mode) {
 
   this.init = function(edit) {
 
-    loadFeed();
-    $('.gbfield').focus(function() {
-      $(this).addClass('focus').select()
-    }).blur(function() {
-      $(this).removeClass('focus')
+    loadFeed().done(function() {
+
+
+
     });
-    $('input#entryName').focus();
+
+    // $('.js-').focus(function() {
+    //   $(this).addClass('focus').select()
+    // }).blur(function() {
+    //   $(this).removeClass('focus')
+    // });
+    // $('input#entryName').focus();
 
     guestbook.$container.find('form').ajaxForm({
       beforeSubmit: function(data, $form) {

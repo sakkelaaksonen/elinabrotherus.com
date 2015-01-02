@@ -1,26 +1,29 @@
-<div id="guestbook" class="col-xs-12 col-sm-9 col-md-10">
+<div id="guestbook" class="col-xs-12 col-sm-9 col-md-6">
 
-<h2 class="page-title">Guestbook</h2>
-<form method="post" action="/guestbook/save" class="guestbook clearfix" id="js-guestbook">
-  <legend>Leave a message</legend>
+<div class="row">
+  
+  <h2 class="page-title">Guestbook</h2>
+  <form method="post" action="/guestbook/save" class="guestbook clearfix" id="js-guestbook">
+    <legend>Leave a message</legend>
     <fieldset class="data"> 
     <div class="fieldrow">
-      <label for="entryName" class="gblabel">Name</label> 
-      
-      
-      <input class="guestbook-name" type="text" id="js-guestbook-name" name="entryName" maxlength="40" tabindex="1"/>        
-    </div>
-
-
-    <div class="fieldrow">
-      <label for="entryMessage" class="gblabel">Message</label> 
-    
-      <textarea autocompete="off" placeholder="No html tags or other code. Just text. Maximum 1000 characters" maxlength="1000" class="guestbook-textfield" id="js-guestbook-message" name="entryMessage" tabindex="2"></textarea> </div>
+        <label for="entryName" class="gblabel">Name</label> 
+        
+        
+        <input class="guestbook-name" autocomplete="off" placeholder="Who are you?" type="text" id="js-guestbook-name" name="entryName" maxlength="40" tabindex="1"/>        
+      </div>
+  
+  
+      <div class="fieldrow">
+        <label for="entryMessage" class="gblabel">Message</label> 
+        <textarea autocompete="off" placeholder="No html tags or other code. Just text. Maximum 1000 characters" maxlength="1000" class="guestbook-textfield" id="js-guestbook-message" name="entryMessage" tabindex="2"></textarea> 
+      </div>
     </fieldset> 
-      
+        
     <fieldset class="actions">
-    <input class="btn btn-eb" type="submit" value="Save" id="add" tabindex="3"/> 
-  </fieldset>
-</form>
-
+      <input class="btn btn-eb" type="submit" value="Save" id="add" tabindex="3"/> 
+    </fieldset>
+  </form>
+</div>
+<div id="js-entries" class="row"></div>
 </div>

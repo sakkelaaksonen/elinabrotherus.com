@@ -290,7 +290,7 @@ nav li a:hover span.btnSmallRight {
 
 
 
-legend {border:0;}
+legend {border:0;font-family: 'Lato', sans-serif;}
 #guestbook textarea, #guestbook input. {}
 fieldset {padding:0 0 2rem 0;}
 
@@ -299,18 +299,54 @@ fieldset {padding:0 0 2rem 0;}
 }
 .fieldrow label {
   display: block;
+  font-family: 'Lato', sans-serif;
 }
 
-.fieldrow input,.fieldrow textarea{
+.fieldrow input,
+.fieldrow textarea{
+  border-radius:0;
   display:block;
-  width:80%;
-  max-width: 600px;
+  width:100%;
+  border:1px solid #ccc;
+  padding:1rem;
+  font-family: 'Lato', sans-serif;
+  color:#aaa;
+
+}
+
+
+.fieldrow input:focus,
+.fieldrow textarea:focus{;
+  background:rgb(255,255,255);
+  border-color:#aaa;
+  color:#666;
+  box-shadow: inset 1px 1px 30px 5px #eaeaea;
 }
 
 .fieldrow textarea{
   display:block;
-  width:80%;
   height:20rem ;
+}
+
+
+.guestbook-entry {
+
+}
+
+h4.entryName {
+
+  border-bottom:1px solid #ddd;
+  box-shadow: 0 7px 18px -7px #ccc;
+  margin-bottom:3rem;
+  font-size:2.5rem;
+
+  
+  
+  font-weight:bold;
+}
+
+p.date {
+  font-weight:bold;
 }
 
 /*@media  (min-width: 900px){
