@@ -1,9 +1,25 @@
 body p, a ,h1, h2,h3,h4,h5 {
- /*font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;*/
     color:#444444;
     font-family: 'Lato', sans-serif;
 }
 
+
+
+.btn {
+  font-family: 'Lato', sans-serif;
+  background:linear-gradient(  rgb(225, 225, 225) 0%, rgb(230, 230, 230) 8% ,rgb(250, 250, 250) 90%,rgb(245, 245, 245) 100%);
+  border:1px solid rgb(220,220,220);
+  font-size:2rem;
+}
+
+.btn:hover {
+  background:linear-gradient(  
+    rgb(230, 230, 230) 0% ,
+    rgb(255, 255, 255) 50%,
+    rgb(235, 235, 235) 100%);
+
+  border:1px solid rgb(220,220,220);
+}
 
 h2 {font-size:3rem;}
 h3 {font-size:2rem;}
@@ -270,6 +286,31 @@ nav li a:hover span.btnSmallRight {
 
 .textList li:hover {
   list-style: square;
+}
+
+
+
+legend {border:0;}
+#guestbook textarea, #guestbook input. {}
+fieldset {padding:0 0 2rem 0;}
+
+.fieldrow {
+  margin-bottom:2rem;
+}
+.fieldrow label {
+  display: block;
+}
+
+.fieldrow input,.fieldrow textarea{
+  display:block;
+  width:80%;
+  max-width: 600px;
+}
+
+.fieldrow textarea{
+  display:block;
+  width:80%;
+  height:20rem ;
 }
 
 /*@media  (min-width: 900px){
