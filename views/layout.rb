@@ -3,9 +3,6 @@ class App
     
     class Layout < Mustache
 
-      def foo
-        @foo
-      end
 
       def css
         @css
@@ -38,9 +35,6 @@ class App
       def gacode
         App.settings.gacode
       end
-
-
-
 
       #EOC
     end
