@@ -133,7 +133,7 @@ class App < Sinatra::Base
   get '/' do
     #compiled_assets[:js]
 
-    redirect to( '/news')
+    redirect to( '/photography')
     # set_page('news')
     # mustache :news
   end
