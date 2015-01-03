@@ -37,7 +37,7 @@ pages:
   keywords: Elina Brotherus, editions,The New Painting ,Complete Videoworks
   desc: inabrotherus.com - Editions
  bibliography:
-  id: bibliograpy
+  id: bibliography
   title: Bibliography
   keywords: Bibliography,Elina Brotherus,Articles,Interview,Bibliography
   desc: elinabrotherus.com - Articles, Interviews and Bibliography.
@@ -52,7 +52,7 @@ pages:
   keywords: Elina Brotherus, video works, videos
   desc: elinabrotherus.com - Video works
  links:
-  id: link
+  id: links
   title: Links
   keywords: links from elinabrotherus
   desc: Links to people and things I support

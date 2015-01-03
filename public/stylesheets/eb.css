@@ -132,7 +132,9 @@ nav li a:hover {
 }
 
 nav li a.active,
-nav li a.active:hover { 
+nav li a.active:hover,
+nav li a.active:visited,
+nav li a.active:focus { 
   color:#333;
   padding-left:1rem;
 }

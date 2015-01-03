@@ -29,14 +29,24 @@ class App
       end
 
       def menu
-        #App.settings.menus.map
-        return App.settings.menus.each do |section|
+        if @menu_items.nil? 
+            @menu_items = App.settings.menus.dup
+        end
+        @menu_items.each do |section|
           section['items'].each do |page|
-            if page['name'] == @current_page['title']
+            puts page['id']
+            puts @current_page['id']
+            puts  page['id'] == @current_page['id']
+            puts "=NEXT=\n"
+            if page['id'] == @current_page['id']
               page['active'] = 'active'
+            else 
+              page['active'] = ''
             end
           end
         end
+        return @menu_items
+        
       end
 
       def gacode
