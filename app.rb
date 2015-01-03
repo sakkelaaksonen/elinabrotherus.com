@@ -24,16 +24,13 @@ class App < Sinatra::Base
     serve '/javascripts', from: 'public/javascripts'
     serve '/stylesheets', from: 'public/stylesheets'
     
-    # serve '/js',     from: './app/js'        # Default
-    # serve '/css',    from: './app//css'       # Default
-    # serve '/images', from: './app/images'    # Default
+     # serve '/javascripts',     from: './app/js'        # Default
+     # serve '/stylesheets',    from: './app//css'       # Default
+     # serve '/images', from: './app/images'    # Default
+
     # The second parameter defines where the compressed version will be served.
     # (Note: that parameter is optional, AssetPack will figure it out.)
-    # js :app, '/js/app.js', [
-    #   '/js/vendor/**/*.js',
-    #   '/js/lib/**/*.js'
-    # ]
-    js :loader, 'load.js', [
+    js :loader, '/javascripts/load.js', [
       # "/js/jquery.cookie.js", 
       # "/js/jquery.scrollTo-1.4.2-min.js", 
       # # "/js/jquery.viewport.mini.js",
@@ -46,11 +43,13 @@ class App < Sinatra::Base
       # "/js/brotherus.guestbook.js",
       # "/js/supersleight-min.js"
     ]
-    css :all, './css/all.css', [
+    css :all, '/stylesheets/all.css', [
       # './css/main.less',
       '/css/eb.css'
     ]
-    #use default compressions
+
+    prebuild true
+      #use default compressions
   }
   #
   # stuff inside this block is set only at startup
