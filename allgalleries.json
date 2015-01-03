@@ -1442,13 +1442,10 @@
       "edition": "6"
     }]
   }, {
-    "id": "large-de-vue-hommage-a-erik-satie",
-    "url": "largedevue",
+    "id": "large-de-vue",
+    "url": "large-de-vue",
     "name": "Large de vue, Hommage à Erik Satie",
     "pics": [{
-      "id": "00",
-      "name": ""
-    }, {
       "id": "01",
       "name": ""
     }, {
@@ -1586,15 +1583,15 @@
     }, {
       "id": "46",
       "name": ""
+    }, {
+      "id": "47",
+      "name": ""
     }]
   }, {
     "id": "the-new-painting",
-    "url": "newpainting",
+    "url": "the-new-painting",
     "name": "The New Painting",
     "pics": [{
-      "id": "00",
-      "name": ""
-    }, {
       "id": "01",
       "name": ""
     }, {
@@ -1783,77 +1780,12 @@
     }, {
       "id": "63",
       "name": ""
-    }, {
-      "id": "64",
-      "name": ""
     }]
   }, {
     "id": "brotherus-girl",
     "url": "brotherus-girl",
     "name": "Brotherus, tyttö (Brotherus, Girl)",
     "pics": [{
-      "id": "00",
-      "name": ""
-    }, {
-      "id": "01",
-      "name": ""
-    }, {
-      "id": "02",
-      "name": ""
-    }, {
-      "id": "03",
-      "name": ""
-    }, {
-      "id": "04",
-      "name": ""
-    }, {
-      "id": "05",
-      "name": ""
-    }, {
-      "id": "06",
-      "name": ""
-    }, {
-      "id": "07",
-      "name": ""
-    }, {
-      "id": "08",
-      "name": ""
-    }, {
-      "id": "09",
-      "name": ""
-    }, {
-      "id": "10",
-      "name": ""
-    }, {
-      "id": "11",
-      "name": ""
-    }, {
-      "id": "12",
-      "name": ""
-    }, {
-      "id": "13",
-      "name": ""
-    }, {
-      "id": "14",
-      "name": ""
-    }, {
-      "id": "15",
-      "name": ""
-    }, {
-      "id": "16",
-      "name": ""
-    }, {
-      "id": "17",
-      "name": ""
-    }]
-  }, {
-    "id": "suites-francaices-2",
-    "url": "suites2",
-    "name": "Suites françaises 2",
-    "pics": [{
-      "id": "00",
-      "name": ""
-    }, {
       "id": "01",
       "name": ""
     }, {
@@ -1909,13 +1841,10 @@
       "name": ""
     }]
   }, {
-    "id": "suites-francaices-1",
-    "url": "suites1",
-    "name": "Suites françaises 1",
+    "id": "suites-francaises-2",
+    "url": "suites-francaises-2",
+    "name": "Suites françaises 2",
     "pics": [{
-      "id": "00",
-      "name": ""
-    }, {
       "id": "01",
       "name": ""
     }, {
@@ -1945,15 +1874,77 @@
     }, {
       "id": "10",
       "name": ""
+    }, {
+      "id": "11",
+      "name": ""
+    }, {
+      "id": "12",
+      "name": ""
+    }, {
+      "id": "13",
+      "name": ""
+    }, {
+      "id": "14",
+      "name": ""
+    }, {
+      "id": "15",
+      "name": ""
+    }, {
+      "id": "16",
+      "name": ""
+    }, {
+      "id": "17",
+      "name": ""
+    }, {
+      "id": "18",
+      "name": ""
+    }, {
+      "id": "19",
+      "name": ""
+    }]
+  }, {
+    "id": "suites-francaises-1",
+    "url": "suites-francaises-1",
+    "name": "Suites françaises 1",
+    "pics": [{
+      "id": "01",
+      "name": ""
+    }, {
+      "id": "02",
+      "name": ""
+    }, {
+      "id": "03",
+      "name": ""
+    }, {
+      "id": "04",
+      "name": ""
+    }, {
+      "id": "05",
+      "name": ""
+    }, {
+      "id": "06",
+      "name": ""
+    }, {
+      "id": "07",
+      "name": ""
+    }, {
+      "id": "08",
+      "name": ""
+    }, {
+      "id": "09",
+      "name": ""
+    }, {
+      "id": "10",
+      "name": ""
+    }, {
+      "id": "11",
+      "name": ""
     }]
   }, {
     "id": "das-madchen-sprach-von-liebe",
-    "url": "dasmadchen",
+    "url": "das-madchen-sprach-von-liebe",
     "name": "Das Mädchen sprach von Liebe",
     "pics": [{
-      "id": "00",
-      "name": ""
-    }, {
       "id": "01",
       "name": ""
     }, {
@@ -2072,13 +2063,148 @@
       "name": ""
     }]
   }, {
-    "id": "self-portraits-and-other-early-works",
-    "url": "earlyworks",
-    "name": "Self-portraits and other early works",
+    "id": "self-portraits-and-other-early-work",
+    "url": "self-portraits-and-other-early-work",
+    "name": "Self-portraits and other early work",
     "pics": [{
-      "id": "00",
-      "name": ""
+      "id": "01",
+      "src": "/01.jpg",
+      "name": "Painter with his student I",
+      "dimensions": "80x101cm",
+      "year": "1997",
+      "edition": "6"
     }, {
+      "id": "02",
+      "src": "/02.jpg",
+      "name": "Painter with his student II",
+      "dimensions": "80x101cm",
+      "year": "1997",
+      "edition": "6"
+    }, {
+      "id": "03",
+      "src": "/03.jpg",
+      "name": "Painter with his student III",
+      "dimensions": "80x101cm",
+      "year": "1997",
+      "edition": "6"
+    }, {
+      "id": "04",
+      "src": "/04.jpg",
+      "name": "Self-portraits with a dancer I",
+      "dimensions": "80x94cm",
+      "year": "1998",
+      "edition": "5"
+    }, {
+      "id": "05",
+      "src": "/05.jpg",
+      "name": "Self-portraits with a dancer II",
+      "dimensions": "80x94cm",
+      "year": "1998",
+      "edition": "5"
+    }, {
+      "id": "06",
+      "src": "/06.jpg",
+      "name": "Self-portraits with a dancer III",
+      "dimensions": "80x94cm",
+      "year": "1998",
+      "edition": "5"
+    }, {
+      "id": "07",
+      "src": "/07.jpg",
+      "name": "Self-portraits with a dancer IV",
+      "dimensions": "80x94cm",
+      "year": "1998",
+      "edition": "5"
+    }, {
+      "id": "08",
+      "src": "/08.jpg",
+      "name": "Self-portraits with a dancer V",
+      "dimensions": "80x94cm",
+      "year": "1998",
+      "edition": "5"
+    }, {
+      "id": "09",
+      "src": "/09.jpg",
+      "name": "Self-portraits with self-portraits I",
+      "dimensions": "80x99cm",
+      "year": "1998",
+      "edition": "5"
+    }, {
+      "id": "10",
+      "src": "/10.jpg",
+      "name": "Self-portraits with self-portraits IV",
+      "dimensions": "80x99cm",
+      "year": "1998",
+      "edition": "5"
+    }, {
+      "id": "11",
+      "src": "/11.jpg",
+      "name": "Self-portrait with teachers",
+      "dimensions": "80x99cm",
+      "year": "1998",
+      "edition": "5"
+    }, {
+      "id": "12",
+      "src": "/12.jpg",
+      "name": "Safety man I",
+      "dimensions": "105x130cm",
+      "year": "1998",
+      "edition": "10"
+    }, {
+      "id": "13",
+      "src": "/13.jpg",
+      "name": "Safety man II",
+      "dimensions": "105x130cm",
+      "year": "1998",
+      "edition": "10"
+    }, {
+      "id": "14",
+      "src": "/14.jpg",
+      "name": "Safety man III",
+      "dimensions": "3 x 35x23cm",
+      "year": "1998",
+      "edition": "10"
+    }, {
+      "id": "15",
+      "src": "/15.jpg",
+      "name": "Safety man IV",
+      "dimensions": "105x130cm",
+      "year": "1998",
+      "edition": "10"
+    }, {
+      "id": "16",
+      "src": "/16.jpg",
+      "name": "The Dog I",
+      "dimensions": "40x50cm",
+      "year": "1999",
+      "edition": "6"
+    }, {
+      "id": "17",
+      "src": "/17.jpg",
+      "name": "The Dog II",
+      "dimensions": "40x50cm",
+      "year": "1999",
+      "edition": "6"
+    }, {
+      "id": "18",
+      "src": "/18.jpg",
+      "name": "The Dog III",
+      "dimensions": "40x50cm",
+      "year": "1999",
+      "edition": "6"
+    }, {
+      "id": "19",
+      "src": "/19.jpg",
+      "name": "The Dog IV",
+      "dimensions": "40x50cm",
+      "year": "1999",
+      "edition": "6"
+    }]
+  }, {
+    "id": "harmaatpaivat",
+    "url": "harmaatpaivat",
+    "name": "Harmaat Päivät",
+    "pics": [{
       "id": "01",
       "name": ""
     }, {
@@ -2098,56 +2224,6 @@
       "name": ""
     }, {
       "id": "07",
-      "name": ""
-    }, {
-      "id": "08",
-      "name": ""
-    }, {
-      "id": "09",
-      "name": ""
-    }, {
-      "id": "10",
-      "name": ""
-    }, {
-      "id": "11",
-      "name": ""
-    }, {
-      "id": "12",
-      "name": ""
-    }, {
-      "id": "13",
-      "name": ""
-    }, {
-      "id": "14",
-      "name": ""
-    }, {
-      "id": "15",
-      "name": ""
-    }]
-  }, {
-    "id": "harmaat-paivat",
-    "url": "harmaatpaivat",
-    "name": "Harmaat Päivät",
-    "pics": [{
-      "id": "00",
-      "name": ""
-    }, {
-      "id": "01",
-      "name": ""
-    }, {
-      "id": "02",
-      "name": ""
-    }, {
-      "id": "03",
-      "name": ""
-    }, {
-      "id": "04",
-      "name": ""
-    }, {
-      "id": "05",
-      "name": ""
-    }, {
-      "id": "06",
       "name": ""
     }]
   }]

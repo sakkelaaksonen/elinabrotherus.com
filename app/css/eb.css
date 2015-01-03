@@ -207,12 +207,15 @@ nav li a:hover span.btnSmallRight {
 }
 
 .thumb-link img {
+  position:relative;
   opacity:.5;
   -moz-transition:all 0.3s ease-in-out;
   -webkit-transition:all 0.3s ease-in-out;
   -o-transition:all 0.3s ease-in-out;
   transition:all 0.3s ease-in-out;
   height:200%;
+  top:-25%;
+  left:-10%;
   display: block;
   
   
@@ -226,6 +229,8 @@ nav li a:hover span.btnSmallRight {
   -webkit-transition:all 1s ease-in-out;
   -o-transition:all 1s ease-in-out;
   transition:all 1s ease-in-out;
+  top:-5%;
+  left:0;
 
 }
 
