@@ -1,6 +1,6 @@
 class App
   module Views
-    
+
     class Layout < Mustache
 
 
@@ -17,7 +17,7 @@ class App
       end
 
       def title
-        @title ||= 'Welcome'
+        @current_page['title']
       end
 
       def meta_keywords
@@ -27,10 +27,17 @@ class App
       def meta_desc
         @current_page['desc'] || ''
       end
-	  	
+
       def menu
-        App.settings.menus
-  	  end
+        #App.settings.menus.map
+        return App.settings.menus.each do |section|
+          section['items'].each do |page|
+            if page['name'] == @current_page['title']
+              page['active'] = 'active'
+            end
+          end
+        end
+      end
 
       def gacode
         App.settings.gacode

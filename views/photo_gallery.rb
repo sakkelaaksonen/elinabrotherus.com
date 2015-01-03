@@ -9,6 +9,10 @@ class App
         @gallery['url']
       end
 
+
+      def title
+        @gallery['name'] rescue @current_page['title']
+      end
     end
   end
 end

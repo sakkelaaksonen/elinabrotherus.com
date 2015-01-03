@@ -23,37 +23,46 @@ menus:
 pages: 
  news:
   title: Welcome
+  id: news
   keywords: Elina Brotherus, photography, Finnish photography, Elina Brotherus website, Elina Brotherys, valokuvaus,  elinabrotherus.com</
   desc: Welcome to elinabrotherus.com. Elina Brotherus is a Finnish photographer currently living in France.
  photography:
+  id: photography
   title: Photography
   keywords: Elina Brotherus, pictures, photographs, Elina Brotherus photo series
   desc: elinabrotherus.com - Photography series 
  editions:
+  id: editions
   title: Editions
   keywords: Elina Brotherus, editions,The New Painting ,Complete Videoworks
   desc: inabrotherus.com - Editions
  bibliography:
+  id: bibliograpy
   title: Bibliography
   keywords: Bibliography,Elina Brotherus,Articles,Interview,Bibliography
   desc: elinabrotherus.com - Articles, Interviews and Bibliography.
  exhibitions:
+  id: exhibitions
   title: Exhibitions
   keywords: exibitions, Elina Brotherus,Ecology of Emotions,Correspondences ,  Martin Asbaek Gallery, Myth of Childhood , La Ruche en d’autres thèrmes
   desc: elinabrotherus.com - Exhibitions
  videos: 
-  title: Videos Works
+  id: videos
+  title: Video Works
   keywords: Elina Brotherus, video works, videos
   desc: elinabrotherus.com - Video works
  links:
+  id: link
   title: Links
   keywords: links from elinabrotherus
   desc: Links to people and things I support
  contact:
+  id: contact
   title: Send me a message
   keywords: ''
-  desc: the crew
+  desc: The Crew
  guestbook:
+  id: guestbook
   title: Guestbook
   keywords: guestbook
   desc: Guestbook for elinabrotherus.com

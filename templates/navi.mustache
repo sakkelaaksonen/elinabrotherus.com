@@ -1,15 +1,13 @@
 {{#menu}}
-
-	<h2>{{title}}</h2>
+<h2>{{title}}</h2>
 <ul>
-	{{#items}}
-	<li>
-		<a id="" class="{{active}}" href="{{url}}">
-		<span class="visible-lg-inline btnSmallRight btnSmall">&gt;</span>
-		<span>{{name}}</span>
-	</a>
-	</li>
-	{{/items}}
+  {{#items}}
+  <li>
+    <a class="{{active}}" href="{{url}}">
+      <span class="visible-lg-inline btnSmallRight btnSmall">&gt;</span>
+      <span>{{name}}</span>
+    </a>
+  </li>
+  {{/items}}
 </ul>
-
 {{/menu}}
