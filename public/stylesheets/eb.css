@@ -1,9 +1,9 @@
 body p, a ,h1, h2,h3,h4,h5 {
     color:#444444;
     font-family: 'Lato', sans-serif;
+
 }
-
-
+body {    padding-top:80px;}
 
 .btn {
   font-family: 'Lato', sans-serif;
@@ -40,10 +40,11 @@ a:hover, a:visited {
 }
 
 header {
+
   border-bottom:1px solid #ddd;
   box-shadow:0px 7px 26px -4px #ccc;
   z-index: 10;
-  margin:0 0 6rem 0;
+  margin:-80px 0 6rem 0;
 
 
 }
@@ -65,16 +66,16 @@ nav {
 
 .affix, 
 .affix-top,
-.affix-bottom { width: 230px;}
+.affix-bottom { max-width: 230px;}
 
-.affix { top:3rem;} 
+.affix { top:3rem; width:inherit;} 
 .affix-top {}  
 .affix-bottom {}
 
 footer{
-margin-top:3rem;
+
 border-top:1px solid #ddd;
-padding-top:3rem;
+padding-top:6rem;
 }
 
 
@@ -361,6 +362,35 @@ h4.entryName {
 
 p.date {
   font-weight:bold;
+}
+
+@media  (max-width: 760px){
+  header {margin-bottom:0;}
+  header h1 a {height:auto; font-size:2rem; line-height:3rem;}
+  
+  nav.affix-top {width:100%; max-width:100%; top:0; }
+
+
+  nav.affix {
+    background: white;
+    width:100%;
+    max-width:100%;
+    z-index:40;
+    top:0;
+    left:0;
+    border-bottom:1px dotted #444444;
+    box-shadow:0px 7px 18px -4px #ccc;
+
+  }
+
+
+  
+  nav h2{display: none;}
+  nav ul {width: 100%; margin:0;}
+  
+  nav li { display:block; float:left; padding:0 1rem; border:0;}
+  nav li a { display:block; float:left; font-size:1.5rem;}
+  nav li a:hover {background-color: transparent;}
 }
 
 /*@media  (min-width: 900px){
