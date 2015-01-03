@@ -5,13 +5,13 @@ head.load([{
 }, {
   'bs': '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'
 }, {
-  'cookie': "/js/jquery.cookie.js"
+  'cookie': "/javascripts/jquery.cookie.js"
 }, {
-  'scroll': "/js/jquery.scrollTo-1.4.2-min.js"
+  'scroll': "/javascripts/jquery.scrollTo-1.4.2-min.js"
 }, {
-  'form': "/js/jquery.form.js"
+  'form': "/javascripts/jquery.form.js"
 }, {
-  'gb': "/js/brotherus.guestbook.js"
+  'gb': "/javascripts/brotherus.guestbook.js"
 }]);
 
 head.ready(function() {
@@ -23,7 +23,16 @@ head.ready(function() {
     if (/photography/.test(location)) {
       $(".pic img").lazyload({
         effect: "fadeIn"
+      })
+
+
+      //prevent context menu from relevant images
+      $(document).on("contextmenu", ".pic img, img.pic, .thumb-link", function(event) {
+        console.log('nope')
+        return false;
       });
+
+
     }
 
     if (/guestbook/.test(location)) {

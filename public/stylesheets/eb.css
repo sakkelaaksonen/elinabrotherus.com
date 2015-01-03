@@ -59,31 +59,21 @@ header h1 a {
 
 }
 
-nav {
-  
-  /*border-right:10px solid linear-gradient(90deg, rgb(191, 191, 191) 30%, rgb(255, 255, 255) 70%);*/
-}
-
 .affix, 
 .affix-top,
 .affix-bottom { max-width: 230px;}
 
-.affix { top:3rem; width:inherit;padding-right:.5rem;} 
+.affix { top:1rem; width:inherit;padding-right:.5rem;} 
+.affix li a { font-size:1.3rem; padding:.2rem;} 
+.affix h2 { font-size:1.5rem; } 
 .affix-top {padding-right:0}  
 .affix-bottom {}
 
 footer{
-
-border-top:1px solid #ddd;
-padding-top:6rem;
-}
-
-
-.nav-row ul {
-  list-style: none;
-  margin: 0 0 2rem 0;
-  padding: 0;
-
+  box-shadow:inset 0px 7px 26px -4px #ccc;
+  border-top:1px solid #ddd;
+  padding-top:6rem;
+  margin-top:4rem;
 }
 
 .content-pic {
@@ -105,8 +95,9 @@ nav h2 {
 }
 
 nav ul {
-   padding:0px;
+  padding:0px;
   display:block;
+  margin: 0 0 2rem 0;
 }
 
 nav li {
