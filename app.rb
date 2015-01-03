@@ -17,40 +17,34 @@ class App < Sinatra::Base
   config_file("#{settings.root}/config.yml")
 
   set( :root, File.dirname(__FILE__) )
+
+
+  # Problems with Heroku and asset pipeline
   #Asset pipeline settings
-  assets {
+  # assets {
 
 
-    serve '/javascripts', from: 'public/javascripts'
-    serve '/stylesheets', from: 'public/stylesheets'
+  #     serve '/javascripts', from: 'public/javascripts'
+  #     serve '/stylesheets', from: 'public/stylesheets'
     
-     # serve '/javascripts',     from: './app/js'        # Default
-     # serve '/stylesheets',    from: './app//css'       # Default
-     # serve '/images', from: './app/images'    # Default
+  #     serve '/js',     from: './app/js'        # Default
+  #     serve '/css',    from: './app//css'       # Default
+  #     serve '/images', from: './app/images'    # Default
 
-    # The second parameter defines where the compressed version will be served.
-    # (Note: that parameter is optional, AssetPack will figure it out.)
-    js :loader, '/javascripts/load.js', [
-      # "/js/jquery.cookie.js", 
-      # "/js/jquery.scrollTo-1.4.2-min.js", 
-      # # "/js/jquery.viewport.mini.js",
-      # "/js/jquery.form.js",
-      # "/js/brotherus.guestbook.js"
+  #   # The second parameter defines where the compressed version will be served.
+  #   # (Note: that parameter is optional, AssetPack will figure it out.)
+  #   js :loader, '/js/load.js', [
+    
+  #   ]
+  #   css :all, '/css/eb.css', [
+  #     # './css/main.less',
+  #     '/css/eb.css'
+  #   ]
 
-
-      # "/js/brotherus.functions.js",
-      # "/js/brotherus.main.js",
-      # "/js/brotherus.guestbook.js",
-      # "/js/supersleight-min.js"
-    ]
-    css :all, '/stylesheets/all.css', [
-      # './css/main.less',
-      '/css/eb.css'
-    ]
-
-    prebuild true
-      #use default compressions
-  }
+  #   prebuild true
+    
+  #   #use default compressions
+  # }
   #
   # stuff inside this block is set only at startup
   #
