@@ -70,4 +70,4 @@ def combine_galleries
 	#end
 end
 
-combine_galleries()
+# combine_galleries()
