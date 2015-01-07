@@ -34,10 +34,6 @@ class App
         end
         @menu_items.each do |section|
           section['items'].each do |page|
-            puts page['id']
-            puts @current_page['id']
-            puts  page['id'] == @current_page['id']
-            puts "=NEXT=\n"
             if page['id'] == @current_page['id']
               page['active'] = 'active'
             else 
@@ -45,6 +41,7 @@ class App
             end
           end
         end
+
         return @menu_items
         
       end

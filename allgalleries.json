@@ -8,13 +8,13 @@
       "name": "Étang marécageux",
       "dimensions": "50x66",
       "year": "5cm",
-      "edition": "2011"
+      "edition": "6"
     }, {
       "id": "02",
       "name": "Teacher and student",
       "dimensions": " Porkkala",
       "year": "70x89cm",
-      "edition": "2011"
+      "edition": "6"
     }, {
       "id": "03",
       "name": "Le Petit Prince",
@@ -32,13 +32,13 @@
       "name": "Quai de Seine",
       "dimensions": "70x94",
       "year": "5cm",
-      "edition": "2011"
+      "edition": "6"
     }, {
       "id": "06",
       "name": "Quai de Seine (L'Olympe moderne)",
       "dimensions": "70x94",
       "year": "5cm",
-      "edition": "2011"
+      "edition": "6"
     }, {
       "id": "07",
       "name": "Au parc de Buttes-Chaumont",
@@ -50,7 +50,7 @@
       "name": "Le parc au crépuscule",
       "dimensions": "50x66",
       "year": "5cm",
-      "edition": "2011"
+      "edition": "6"
     }, {
       "id": "09",
       "name": "Le jardin clos",
@@ -68,13 +68,13 @@
       "name": "Two nudes",
       "dimensions": "25x18",
       "year": "5cm",
-      "edition": "2011"
+      "edition": "6"
     }, {
       "id": "12",
       "name": "Superman",
       "dimensions": "50x62",
       "year": "5",
-      "edition": "2012"
+      "edition": "6"
     }, {
       "id": "13",
       "name": "Orange figures in the winter",
@@ -133,7 +133,7 @@
       "name": "Les Chaussures",
       "dimensions": "80x102cm / 50x64cm",
       "year": "1999",
-      "edition": "6 (2+4)"
+      "edition": "6"
     }, {
       "id": "09",
       "name": "Bonne nuit mon amour",
@@ -157,25 +157,25 @@
       "name": "La Main",
       "dimensions": "70x56cm / 50x40cm",
       "year": "1999",
-      "edition": "6 (5+1)"
+      "edition": "6"
     }, {
       "id": "13",
       "name": "Exercice d'émotions II, part 1",
       "dimensions": "50x33cm",
       "year": "2012",
-      "edition": "6 (triptych)"
+      "edition": "6"
     }, {
       "id": "14",
       "name": "Exercice d'émotions II, part 2",
       "dimensions": "50x33cm",
       "year": "2012",
-      "edition": "6 (triptych)"
+      "edition": "6"
     }, {
       "id": "15",
       "name": "Exercice d'émotions II, part 3",
       "dimensions": "50x33cm",
       "year": "2012",
-      "edition": "6 (triptych)"
+      "edition": "6"
     }, {
       "id": "16",
       "name": "Le Sommaire",
@@ -247,19 +247,19 @@
       "name": "Dans le brouillard",
       "dimensions": "70x93cm / 90x120cm",
       "year": "2011",
-      "edition": "6 (3+3)"
+      "edition": "6"
     }, {
       "id": "28",
       "name": "Nu aux bottes de randonnée",
       "dimensions": "70x86cm / 90x110cm",
       "year": "2011",
-      "edition": "6 (3+3)"
+      "edition": "6"
     }, {
       "id": "29",
       "name": "Exercice d'équilibre",
       "dimensions": "70x93cm / 90x120cm",
       "year": "2011",
-      "edition": "6 (3+3)"
+      "edition": "6"
     }, {
       "id": "30",
       "name": "Le Cerisier",
@@ -271,19 +271,19 @@
       "name": "Exercice d'émotions V, part 1",
       "dimensions": "50x33cm",
       "year": "2012",
-      "edition": "6 (triptych)"
+      "edition": "6"
     }, {
       "id": "32",
       "name": "Exercice d'émotions V, part 2",
       "dimensions": "50x33cm",
       "year": "2012",
-      "edition": "6 (triptych)"
+      "edition": "6"
     }, {
       "id": "33",
       "name": "Exercice d'émotions V, part 3",
       "dimensions": "50x33",
       "year": "2012",
-      "edition": "6 (triptych)"
+      "edition": "6"
     }, {
       "id": "34",
       "name": "La Saône 3",
@@ -325,7 +325,7 @@
       "name": "Chalon-sur-Saône 3",
       "dimensions": "105x135cm / 80x102cm",
       "year": "1999",
-      "edition": "6 (3+3)"
+      "edition": "6"
     }, {
       "id": "41",
       "name": "La Passerelle",
@@ -337,7 +337,7 @@
       "name": "Chalon-sur-Saône 6",
       "dimensions": "105x135cm / 80x102cm",
       "year": "1999",
-      "edition": "6 (5+1)"
+      "edition": "6"
     }, {
       "id": "43",
       "name": "Platanes",
@@ -444,7 +444,7 @@
       "name": "2008",
       "dimensions": "29",
       "year": "7x21cm",
-      "edition": "2013"
+      "edition": "6"
     }, {
       "id": "02",
       "name": "Annonciation",
@@ -480,7 +480,7 @@
       "name": "2009",
       "dimensions": "29",
       "year": "7x21cm",
-      "edition": "2013"
+      "edition": "6"
     }, {
       "id": "08",
       "name": "Annonciation 3",
@@ -492,7 +492,7 @@
       "name": "Annonciation 4, Bruxelles 23.10.2010",
       "dimensions": "30x44",
       "year": "5cm",
-      "edition": "2010"
+      "edition": "6"
     }, {
       "id": "10 ",
       "name": "Annonciation 5, Avallon 19.12.2010",
@@ -504,7 +504,7 @@
       "name": "2010",
       "dimensions": "29",
       "year": "7x21cm",
-      "edition": "2013"
+      "edition": "6"
     }, {
       "id": "12",
       "name": "Annonciation 6, Helsinki 10.02.2011",
@@ -546,7 +546,7 @@
       "name": "2011",
       "dimensions": "29",
       "year": "7x21cm",
-      "edition": "2013"
+      "edition": "6"
     }, {
       "id": "19",
       "name": "Annonciation 12",
@@ -618,7 +618,7 @@
       "name": "Annonciation 20, Closest to a family",
       "dimensions": "15x17",
       "year": "5cm",
-      "edition": "2012"
+      "edition": "6"
     }, {
       "id": "31",
       "name": "Annonciation 21, part 1",
@@ -696,7 +696,7 @@
       "name": "Annonciation 29",
       "dimensions": "20x26",
       "year": "5cm",
-      "edition": "2012"
+      "edition": "6"
     }, {
       "id": "44",
       "name": "Annonciation 30, Last one in my line",
@@ -708,7 +708,7 @@
       "name": "2012",
       "dimensions": "29",
       "year": "7x21cm",
-      "edition": "2013"
+      "edition": "6"
     }, {
       "id": "46",
       "name": "Annonciation 31, The End",
@@ -726,7 +726,7 @@
       "name": "2013",
       "dimensions": "29",
       "year": "7x21cm",
-      "edition": "2013"
+      "edition": "6"
     }]
   }, {
     "id": "artists-at-work",
@@ -734,31 +734,40 @@
     "name": "Artists at Work",
     "pics": [{
       "id": "01",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "02",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "03",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "04",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "05",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "06",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "07",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "08",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "09",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }]
   }, {
     "id": "artist-and-her-model",
@@ -766,178 +775,338 @@
     "name": "Artist and her Model",
     "pics": [{
       "id": "01",
-      "name": "Deux personnages au bord de la mer"
+      "name": "Deux personnages au bord de la mer",
+      "dimensions": "105x133cm",
+      "year": "2005",
+      "edition": "6"
     }, {
       "id": "02",
-      "name": "Points of View on Landscape I"
+      "name": "Points of View on Landscape I",
+      "dimensions": "2 x 105x130cm",
+      "year": "2006",
+      "edition": "6"
     }, {
       "id": "03",
-      "name": "Points of View on Landscape II;"
+      "name": "Points of View on Landscape II",
+      "dimensions": "2 x 70x85cm",
+      "year": "2006",
+      "edition": "6"
     }, {
       "id": "04",
-      "name": "Points of View on Landscape III"
+      "name": "Points of View on Landscape III",
+      "dimensions": "70x79cm + 70x76cm",
+      "year": "2006",
+      "edition": "6"
     }, {
       "id": "05",
-      "name": "Points of View on Landscape IV;"
+      "name": "Points of View on Landscape IV",
+      "dimensions": "70x85cm + 70x71cm",
+      "year": "2006",
+      "edition": "6"
     }, {
       "id": "06",
-      "name": "Two figures standing;"
+      "name": "Two figures standing",
+      "dimensions": "",
+      "year": "2006",
+      "edition": "6"
     }, {
       "id": "07",
-      "name": "Two figures, one seated;"
+      "name": "Two figures, one seated",
+      "dimensions": "",
+      "year": "2006",
+      "edition": "6"
     }, {
       "id": "08",
-      "name": "Man with umbrella"
+      "name": "Man with umbrella",
+      "dimensions": "70x90cm",
+      "year": "2006",
+      "edition": "6"
     }, {
       "id": "09",
-      "name": "In the mirror 1"
+      "name": "In the mirror 1",
+      "dimensions": "40x52cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "10",
-      "name": "In the mirror 2"
+      "name": "In the mirror 2",
+      "dimensions": "40x52cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "11",
-      "name": "Portrait of a couple;"
+      "name": "Portrait of a couple",
+      "dimensions": "105x127cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "12",
-      "name": "Here today, gone tomorrow"
+      "name": "Here today, gone tomorrow",
+      "dimensions": "70x84cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "13",
-      "name": "Here today, gone tomorrow 2"
+      "name": "Here today, gone tomorrow 2",
+      "dimensions": "80x93cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "14",
-      "name": "Couple in the mountains"
+      "name": "Couple in the mountains",
+      "dimensions": "80x99cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "15",
-      "name": "Man on a mountain path"
+      "name": "Man on a mountain path",
+      "dimensions": "70x87cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "16",
-      "name": "The Lake"
+      "name": "The Lake",
+      "dimensions": "70x88cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "17",
-      "name": "Green Lake;"
+      "name": "Green Lake",
+      "dimensions": "80x97cm / 105x128cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "18",
-      "name": "Two figures in front of a mountain landscape;"
+      "name": "Two figures in front of a mountain landscape",
+      "dimensions": "50x58cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "19",
-      "name": "Waterfront"
+      "name": "Waterfront",
+      "dimensions": "60x74cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "20",
-      "name": "Artist and Model Reflected in a Mirror 1"
+      "name": "Artist and Model Reflected in a Mirror 1",
+      "dimensions": "130x104cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "21",
-      "name": "Artist and Model Reflected in a Mirror 2"
+      "name": "Artist and Model Reflected in a Mirror 2",
+      "dimensions": "130x104cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "22",
-      "name": "Artist and Model Reflected in a Mirror 3"
+      "name": "Artist and Model Reflected in a Mirror 3",
+      "dimensions": "130x104cm",
+      "year": "2007",
+      "edition": "6"
     }, {
       "id": "23",
-      "name": "Fuji-mi 1"
+      "name": "Fuji-mi 1",
+      "dimensions": "70x80cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "24",
-      "name": "Fuji-mi 2"
+      "name": "Fuji-mi 2",
+      "dimensions": "70x55cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "25",
-      "name": "Fuji-mi 3"
+      "name": "Fuji-mi 3",
+      "dimensions": "70x86cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "26",
-      "name": "Fuji-mi 4"
+      "name": "Fuji-mi 4",
+      "dimensions": "70x88cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "27",
-      "name": "Fuji-mi 5"
+      "name": "Fuji-mi 5",
+      "dimensions": "70x81cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "28",
-      "name": "Fuji-mi 6"
+      "name": "Fuji-mi 6",
+      "dimensions": "70x80cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "29",
-      "name": "Interior with a lamp"
+      "name": "Interior with a lamp",
+      "dimensions": "70x84cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "30",
-      "name": "The Pool"
+      "name": "The Pool",
+      "dimensions": "80x99cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "31",
-      "name": "Untitled (By the lake)"
+      "name": "Untitled (By the lake)",
+      "dimensions": "",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "32",
-      "name": "La maja vestida"
+      "name": "La maja vestida",
+      "dimensions": "50x62cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "33",
-      "name": "La maja desnuda"
+      "name": "La maja desnuda",
+      "dimensions": "50x62cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "34",
-      "name": "Mistral 1"
+      "name": "Mistral 1",
+      "dimensions": "80x99cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "35",
-      "name": "Mistral 2"
+      "name": "Mistral 2",
+      "dimensions": "50x74cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "36",
-      "name": "Maaru's Mountain;"
+      "name": "Maaru's Mountain",
+      "dimensions": "80x99cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "37",
-      "name": "Emre's Umbrella"
+      "name": "Emre's Umbrella",
+      "dimensions": "80x98cm",
+      "year": "2008",
+      "edition": "6"
     }, {
       "id": "38",
-      "name": "Newton's Color Theory"
+      "name": "Newton's Color Theory",
+      "dimensions": "105x132cm",
+      "year": "2009",
+      "edition": "6"
     }, {
       "id": "39",
-      "name": "Nudo fiorentino"
+      "name": "Nudo fiorentino",
+      "dimensions": "80x53cm",
+      "year": "2010",
+      "edition": "6"
     }, {
       "id": "40",
-      "name": "The persimmon tree;"
+      "name": "The persimmon tree",
+      "dimensions": "80x53cm",
+      "year": "2010",
+      "edition": "6"
     }, {
       "id": "41",
-      "name": "Nu bruxellois"
+      "name": "Nu Bruxellois",
+      "dimensions": "80x53cm",
+      "year": "2010",
+      "edition": "6"
     }, {
       "id": "42",
-      "name": "Forest road"
+      "name": "Forest road",
+      "dimensions": "80x53cm",
+      "year": "2010",
+      "edition": "6"
     }, {
       "id": "43",
-      "name": "Nu descendant un escalier"
+      "name": "Nu descendant un escalier",
+      "dimensions": "60x90cm",
+      "year": "2010",
+      "edition": "6"
     }, {
       "id": "44",
-      "name": "Hotel 1"
+      "name": "Hotel 1",
+      "dimensions": "40x57cm",
+      "year": "2010",
+      "edition": "6"
     }, {
       "id": "45",
-      "name": "Hotel 2"
+      "name": "Hotel 2",
+      "dimensions": "40x57cm",
+      "year": "2010",
+      "edition": "6"
     }, {
       "id": "46",
-      "name": "Reflection"
+      "name": "Reflection",
+      "dimensions": "40x56cm",
+      "year": "2010",
+      "edition": "6"
     }, {
       "id": "47",
-      "name": "Winter landscape with Laura's dress"
+      "name": "Winter landscape with Laura's dress",
+      "dimensions": "70x100cm",
+      "year": "2010",
+      "edition": "6"
     }, {
       "id": "48",
-      "name": "Black Bay"
+      "name": "Black Bay",
+      "dimensions": "60x90cm",
+      "year": "2010",
+      "edition": "6"
     }, {
       "id": "49",
-      "name": "Finis terrae"
+      "name": "Finis terrae",
+      "edition": "6"
     }, {
       "id": "50",
-      "name": "Self-portrait with Arno Rafael Minkkinen, or Student and teacher under a plum tree"
+      "name": "Self-portrait with Arno Rafael Minkkinen, or Student and teacher under a plum tree",
+      "dimensions": "80x53cm",
+      "year": "2010",
+      "edition": "6"
     }, {
       "id": "51",
-      "name": "Teacher and student, self-portrait with Susanna Majuri"
+      "name": "Teacher and student, self-portrait with Susanna Majuri",
+      "dimensions": "80x98cm",
+      "year": "2011",
+      "edition": "6"
     }, {
       "id": "52",
-      "name": "Teacher and student, self-portrait with Dorothée Smith"
+      "name": "Teacher and student, self-portrait with Dorothée Smith",
+      "dimensions": "70x91cm",
+      "year": "2011",
+      "edition": "6"
     }, {
       "id": "53",
-      "name": "Listener"
+      "name": "Listener",
+      "edition": "6"
     }, {
       "id": "54",
-      "name": "Undefined nude"
+      "name": "Undefined nude",
+      "edition": "6"
     }, {
       "id": "56",
-      "name": "Spectator 2"
+      "name": "Spectator 2",
+      "edition": "6"
     }, {
       "id": "57",
-      "name": "Through the looking-glass"
+      "name": "Through the looking-glass",
+      "edition": "6"
     }, {
       "id": "58",
-      "name": "Reflecting with camera"
+      "name": "Reflecting with camera",
+      "edition": "6"
     }, {
       "id": "59",
-      "name": "Another home"
+      "name": "Another home",
+      "edition": "6"
     }]
   }, {
     "id": "danseurs",
@@ -1019,7 +1188,7 @@
       "name": "50x39cm",
       "dimensions": "2007",
       "year": "6",
-      "edition": null
+      "edition": "6"
     }, {
       "id": "12",
       "src": "/12.jpg",
@@ -1229,7 +1398,7 @@
       "name": "Artiste en danseuse",
       "dimensions": "24x19,4cm",
       "year": "2007",
-      "edition": "6Sept études de mouvement, danseuse à la chevelure noire 5"
+      "edition": "6"
     }, {
       "id": "12",
       "src": "/12.jpg",
@@ -1447,145 +1616,192 @@
     "name": "Large de vue, Hommage à Erik Satie",
     "pics": [{
       "id": "01",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "02",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "03",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "04",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "05",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "06",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "07",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "08",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "09",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "10",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "11",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "12",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "13",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "14",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "15",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "16",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "17",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "18",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "19",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "20",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "21",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "22",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "23",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "24",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "25",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "26",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "27",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "28",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "29",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "30",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "31",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "32",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "33",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "34",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "35",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "36",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "37",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "38",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "39",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "40",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "41",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "42",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "43",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "44",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "45",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "46",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "47",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }]
   }, {
     "id": "the-new-painting",
@@ -1593,193 +1809,256 @@
     "name": "The New Painting",
     "pics": [{
       "id": "01",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "02",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "03",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "04",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "05",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "06",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "07",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "08",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "09",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "10",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "11",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "12",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "13",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "14",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "15",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "16",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "17",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "18",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "19",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "20",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "21",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "22",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "23",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "24",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "25",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "26",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "27",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "28",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "29",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "30",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "31",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "32",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "33",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "34",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "35",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "36",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "37",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "38",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "39",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "40",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "41",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "42",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "43",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "44",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "45",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "46",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "47",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "48",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "49",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "50",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "51",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "52",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "53",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "54",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "55",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "56",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "57",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "58",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "59",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "60",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "61",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "62",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "63",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }]
   }, {
     "id": "brotherus-girl",
@@ -1787,58 +2066,76 @@
     "name": "Brotherus, tyttö (Brotherus, Girl)",
     "pics": [{
       "id": "01",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "02",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "03",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "04",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "05",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "06",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "07",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "08",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "09",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "10",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "11",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "12",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "13",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "14",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "15",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "16",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "17",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "18",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }]
   }, {
     "id": "suites-francaises-2",
@@ -1846,61 +2143,80 @@
     "name": "Suites françaises 2",
     "pics": [{
       "id": "01",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "02",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "03",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "04",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "05",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "06",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "07",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "08",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "09",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "10",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "11",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "12",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "13",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "14",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "15",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "16",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "17",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "18",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "19",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }]
   }, {
     "id": "suites-francaises-1",
@@ -1908,37 +2224,48 @@
     "name": "Suites françaises 1",
     "pics": [{
       "id": "01",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "02",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "03",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "04",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "05",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "06",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "07",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "08",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "09",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "10",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "11",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }]
   }, {
     "id": "das-madchen-sprach-von-liebe",
@@ -1946,121 +2273,160 @@
     "name": "Das Mädchen sprach von Liebe",
     "pics": [{
       "id": "01",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "02",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "03",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "04",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "05",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "06",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "07",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "08",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "09",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "10",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "11",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "12",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "13",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "14",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "15",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "16",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "17",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "18",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "19",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "20",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "21",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "22",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "23",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "24",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "25",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "26",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "27",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "28",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "29",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "30",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "31",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "32",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "33",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "34",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "35",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "36",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "37",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "38",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "39",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }]
   }, {
     "id": "self-portraits-and-other-early-work",
@@ -2093,84 +2459,84 @@
       "name": "Self-portraits with a dancer I",
       "dimensions": "80x94cm",
       "year": "1998",
-      "edition": "5"
+      "edition": "6"
     }, {
       "id": "05",
       "src": "/05.jpg",
       "name": "Self-portraits with a dancer II",
       "dimensions": "80x94cm",
       "year": "1998",
-      "edition": "5"
+      "edition": "6"
     }, {
       "id": "06",
       "src": "/06.jpg",
       "name": "Self-portraits with a dancer III",
       "dimensions": "80x94cm",
       "year": "1998",
-      "edition": "5"
+      "edition": "6"
     }, {
       "id": "07",
       "src": "/07.jpg",
       "name": "Self-portraits with a dancer IV",
       "dimensions": "80x94cm",
       "year": "1998",
-      "edition": "5"
+      "edition": "6"
     }, {
       "id": "08",
       "src": "/08.jpg",
       "name": "Self-portraits with a dancer V",
       "dimensions": "80x94cm",
       "year": "1998",
-      "edition": "5"
+      "edition": "6"
     }, {
       "id": "09",
       "src": "/09.jpg",
       "name": "Self-portraits with self-portraits I",
       "dimensions": "80x99cm",
       "year": "1998",
-      "edition": "5"
+      "edition": "6"
     }, {
       "id": "10",
       "src": "/10.jpg",
       "name": "Self-portraits with self-portraits IV",
       "dimensions": "80x99cm",
       "year": "1998",
-      "edition": "5"
+      "edition": "6"
     }, {
       "id": "11",
       "src": "/11.jpg",
       "name": "Self-portrait with teachers",
       "dimensions": "80x99cm",
       "year": "1998",
-      "edition": "5"
+      "edition": "6"
     }, {
       "id": "12",
       "src": "/12.jpg",
       "name": "Safety man I",
       "dimensions": "105x130cm",
       "year": "1998",
-      "edition": "10"
+      "edition": "6"
     }, {
       "id": "13",
       "src": "/13.jpg",
       "name": "Safety man II",
       "dimensions": "105x130cm",
       "year": "1998",
-      "edition": "10"
+      "edition": "6"
     }, {
       "id": "14",
       "src": "/14.jpg",
       "name": "Safety man III",
       "dimensions": "3 x 35x23cm",
       "year": "1998",
-      "edition": "10"
+      "edition": "6"
     }, {
       "id": "15",
       "src": "/15.jpg",
       "name": "Safety man IV",
       "dimensions": "105x130cm",
       "year": "1998",
-      "edition": "10"
+      "edition": "6"
     }, {
       "id": "16",
       "src": "/16.jpg",
@@ -2206,25 +2572,32 @@
     "name": "Harmaat Päivät",
     "pics": [{
       "id": "01",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "02",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "03",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "04",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "05",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "06",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }, {
       "id": "07",
-      "name": ""
+      "name": "",
+      "edition": "6"
     }]
   }]
 }

@@ -1,21 +1,34 @@
 require 'nokogiri'
 require 'json'
+# galleryxml = Nokogiri::XML::parse(File.read('gallerytemp.xml'))
+# puts galleryxml
 
-galleryxml = Nokogiri::XML::parse(File.read('xml/gallery.xml'))
-galleryhash =  galleryxml.xpath('//gallery').map do |node|
-    {
-        # childen: node.xpath('folder').text
-        id: node.attr('id'),
-        url: node.xpath('folder').text,
-        name: node.xpath('name').text,
-        pics: node.xpath('pic').each_with_index.map {|pic,i| {
-                id: i,
-                src: "#{node.xpath('folder').text}/#{pic.xpath('lores').text}.jpg",
-                title: pic.xpath('title').text
-        }}
-    }
+# galleryhash =  galleryxml.xpath('//gallery').map do |node|
+#   {
+#     # childen: node.xpath('folder').text
+    
+#     pics: node.xpath('pic').each_with_index.map { |pic,i|
+
+#       {
+#         id: "#{(i<10 ? '0':'')}#{i+1}",
+#         #src: "#{node.xpath('folder').text}/#{pic.xpath('lores').text}.jpg",
+#         name: pic.xpath('title').text,
+#         dimensions: pic.xpath('dimensions').text,
+#         year: pic.xpath('year').text,
+#         edition: pic.xpath('editions').text
+#     }}
+#   }
+# end
+
+
+
+# # puts galleryhash.to_json
+# # newjson = JSON.parse(File.read('newfiles.json'))
+# # newjson['galleries'].concat(galleryhash)
+
+g = JSON.parse(File.read('allgalleries.json'))
+g['galleries'].each do |gal|
+    gal['pics'].each { |pic| pic['edition'] = "6" }
 end
-galleryhash.to_json
-newjson = JSON.parse(File.read('newfiles.json'))
-newjson['galleries'].concat(galleryhash)
-File.open('allgalleries.json','w') {|f| f.write(newjson.to_json)}
+
+File.open('allgalleries2.json','w') {|f| f.write(g.to_json)}
