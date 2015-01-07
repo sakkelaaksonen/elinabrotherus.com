@@ -365,10 +365,6 @@ p.date {
 }
 
 
-@media  (max-width: 320px){ 
-.content {margin-top:180px;}
-}
-
 @media  (max-width: 760px){
   .content {margin-top:80px;}
   header {margin-bottom:0;}
@@ -401,26 +397,10 @@ p.date {
   nav li a.active:before,
   nav li a.active:after {content:'~';}
 
-  
-
-
 }
 
-/*@media  (min-width: 900px){
-  #browser .pic img { width: 90%}
+@media  (max-width: 460px){ 
+.content {margin-top:140px;}
 }
 
-@media  (max-width: 900px){
-  #headerBox {min-height:0;height: auto;}
-  #headerBox h1 {
-    min-height:0;
-    height: auto;
-    line-height: 3rem;
-  }
-  #contentBox {
-    padding-top:.5rem;
-  }
-  #galleryColumn {clear:both;  float: none;}
-  #browser {margin-top:15rem;}
-  #browser .pic img {width:80%;}
-}*/
+
