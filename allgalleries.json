@@ -734,39 +734,57 @@
     "name": "Artists at Work",
     "pics": [{
       "id": "01",
-      "name": "",
+      "name": "Artists at Work 1",
+      "dimensions": "70x88cm",
+      "year": "2009",
       "edition": "6"
     }, {
       "id": "02",
-      "name": "",
+      "name": "Artists at Work 2",
+      "dimensions": "70x88cm",
+      "year": "2009",
       "edition": "6"
     }, {
       "id": "03",
-      "name": "",
+      "name": "Artists at Work 3",
+      "dimensions": "70x88cm",
+      "year": "2009",
       "edition": "6"
     }, {
       "id": "04",
-      "name": "",
+      "name": "Artists at Work 4",
+      "dimensions": "70x86cm",
+      "year": "2009",
       "edition": "6"
     }, {
       "id": "05",
-      "name": "",
+      "name": "Artists at Work 5",
+      "dimensions": "70x86cm",
+      "year": "2009",
       "edition": "6"
     }, {
       "id": "06",
-      "name": "",
+      "name": "Artists at Work 6",
+      "dimensions": "70x84.5cm",
+      "year": "2009",
       "edition": "6"
     }, {
       "id": "07",
-      "name": "",
+      "name": "Artists at Work 7",
+      "dimensions": "70x88cm",
+      "year": "2009",
       "edition": "6"
     }, {
       "id": "08",
-      "name": "",
+      "name": "Artists at Work 8",
+      "dimensions": "70x55.5cm",
+      "year": "2009",
       "edition": "6"
     }, {
       "id": "09",
-      "name": "",
+      "name": "Artists at Work 9",
+      "dimensions": "70x88cm",
+      "year": "2009",
       "edition": "6"
     }]
   }, {
@@ -1616,191 +1634,285 @@
     "name": "Large de vue, Hommage à Erik Satie",
     "pics": [{
       "id": "01",
-      "name": "",
+      "name": "exhibition view 1, Kiasma, Helsinki 2007",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "02",
-      "name": "",
+      "name": "exhibition view 2, Kiasma, Helsinki 2007",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "03",
-      "name": "",
+      "name": "Assez lent",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "04",
-      "name": "",
+      "name": "très lié et mélancholique",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "05",
-      "name": "",
+      "name": "Voyez",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "06",
-      "name": "",
+      "name": "léger mais fort",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "07",
-      "name": "",
+      "name": "ralentir",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "08",
-      "name": "",
+      "name": "Reprendre",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "09",
-      "name": "",
+      "name": "très lié",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
-      "id": "10",
-      "name": "",
+      "id": "010",
+      "name": "Grossir",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "11",
-      "name": "",
+      "name": "Particulièrement",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "12",
-      "name": "",
+      "name": "retenez, je vous prie",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "13",
-      "name": "",
+      "name": "Plus lent",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "14",
-      "name": "",
+      "name": "en dehors",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "15",
-      "name": "",
+      "name": "ralentir",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "16",
-      "name": "",
+      "name": "Large de vue",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "17",
-      "name": "",
+      "name": "Ne tournez pas",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "18",
-      "name": "",
+      "name": "très chanté",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "19",
-      "name": "",
+      "name": "Positivement",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "20",
-      "name": "",
+      "name": "Mieux",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "21",
-      "name": "",
+      "name": "Encore",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "22",
-      "name": "",
+      "name": "Grattez",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "23",
-      "name": "",
+      "name": "Non vite",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "24",
-      "name": "",
+      "name": "Souriez",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "25",
-      "name": "",
+      "name": "Avec plaisir",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "26",
-      "name": "",
+      "name": "Naturellement",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "27",
-      "name": "",
+      "name": "Depuis",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "28",
-      "name": "",
+      "name": "en dehors",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "29",
-      "name": "",
+      "name": "sans méchanceté",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "30",
-      "name": "",
+      "name": "Droit",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "31",
-      "name": "",
+      "name": "Visible",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "32",
-      "name": "",
+      "name": "De coin",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "33",
-      "name": "",
+      "name": "Prenez",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "34",
-      "name": "",
+      "name": "chanter",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "35",
-      "name": "",
+      "name": "Nécessairement",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "36",
-      "name": "",
+      "name": "Beaucoup",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "37",
-      "name": "",
+      "name": "A voir",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "38",
-      "name": "",
+      "name": "Ne parlez pas",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "39",
-      "name": "",
+      "name": "Dire",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "40",
-      "name": "",
+      "name": "Précieux",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "41",
-      "name": "",
+      "name": "crescendo",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "42",
-      "name": "",
+      "name": "Regardez",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "43",
-      "name": "",
+      "name": "Seul",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "44",
-      "name": "",
+      "name": "En face",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "45",
-      "name": "",
+      "name": "Véritable",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "46",
-      "name": "",
+      "name": "retenir",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }, {
       "id": "47",
-      "name": "",
+      "name": "noblement",
+      "dimensions": "",
+      "year": "",
       "edition": "6"
     }]
   }, {
